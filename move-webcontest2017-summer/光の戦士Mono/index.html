@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!--
+//////////////////////////////////////
+＊手紙＊
+マネージャーに言われてここに来たのかな？
+ヒントは選択肢と言いながら、パートナーを選ばないこと。
+あの部屋は君の精神状態を表していた場所なんだ。
+あの状況で人に頼るということは、まだ君の「決意」が足りないから
+たとえ、この先甲子園に出場することができても、こういった状況は何度も出てくるはずだ。
+信頼できるパートナーがいることはとても大事であるし、困った時にすがりたくなる。
+だからこそ、信じてほしい自分自身の力を！
+
+もう一人のパートナー「僕」より
+//////////////////////////////////////
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>もしN高校野球部が甲子園を目指したら</title>
+    <link rel="stylesheet" href="css-index.css">
+    <script src="./js-index.js"></script>
+</head>
+
+<body>
+    <div class="box-back">
+        <center>
+
+            <div id="intro">
+                <h4>もしN高校野球部が甲子園を目指したら</h4>
+                <p>N高校３年生野球部所属の主人公「僕」の視点で、チームを甲子園初出場に導きましょう。<br>
+                    このゲームは3分程度で終わるノベルゲームになっています。※セーブ機能はありません。<br>
+                    エンディングは２つです。パソコンブラウザ推奨！ </p>
+            </div>
+
+            <div id="option1">
+                <h4>甲子園出場に向けて、ともに戦うパートナーを選んでください。選択してNEXT。 </h4>
+                <div id="output">選択すると、ここが変わります。</div>
+                <!--labelタグとinputタグを関連づけることでラベルを選択した時にラジオボタンが動く仕様。タイプ属性でラジオボタン。ラベルにbefore & afterを作ることで表示遷移をうまく動かしている-->
+                <input type="radio" value="監督：折原さん" name="RadioGroup1" id="radio01" onchange="onRadioButtonChange();" />
+                <!--for属性で関連付け -->
+                <label for="radio01" class="radio"><img src="./img/kan-image.png" alt=""　width="150px" height="150px">
+                <table>
+                    <tr>
+        <td class="tdclass">N高校野球監督：</td>
+        <td>グラディエーター・折原</td>
+    </tr>
+    <tr>
+        <td>プロフィール：</td>
+        <td>N高校プログラミング教員。</td>
+    </tr>
+    <tr>
+        <td>　</td>
+        <td>選手の体力や技術基盤の確立を重視する教育方針、</td>
+    </tr>
+    <tr>
+        <td>　</td>
+        <td>去年は甲子園出場まであと一歩だった。定石重視</td>
+    </tr>
+    <tr>
+        <td>　</td>
+        <td>のため試合の戦略面での駆け引きができない性格。</td>
+    </tr>
+    <tr>
+        <td>　</td>
+        <td>戦略面ではゴリに一任している。</td>
+    </tr>
+</table></label>
+
+                <input type="radio" value="マネージャー：ゴリさん" name="RadioGroup1" id="radio02" onchange="onRadioButtonChange();" />
+                <label for="radio02" class="radio"><img src="./img/mana-image.png" alt=""　width="150px" height="150px">
+                <table>
+    <tr>
+        <td class="tdclass">マネージャー：</td>
+        <td >ゴリさん</td>
+    </tr>
+    <tr>
+        <td>プロフィール：</td>
+        <td>現在N高校２年生。１年の時に甲子園出場まで</td>
+    </tr>
+    <tr>
+        <td>　</td>
+        <td>あと少しという思いから２年生になりマネジメント</td>
+    </tr>
+    <tr>
+        <td>　</td>
+        <td>の能力向上のためにプログラム技術を習得。</td>
+    </tr>
+    <tr>
+        <td>　</td>
+        <td>理論面をサポートする影なる監督と呼ばれることも。</td>
+    </tr>
+    <tr>
+        <td>　</td>
+        <td>知的ゴリラ系女子。素手で林檎潰せます。</td>
+    </tr>
+</table></label>
+            </div>
+
+
+            <!-- 背景画像と人物をここに置くブロック -->
+            <div class="relative">
+                <img id="gazo-bg" src="./img/title.JPEG" width="600" height="auto" alt="初期背景">
+                <img id="gazo" src="./img/boku-image.png" alt="人物" class="absolute" 　width="auto" height="180px">
+            </div>
+            <!-- メッセージウィンドウのブロック -->
+            <div class="box-message" align="left" id="viewArea">▽NEXTボタンを押すと始まります。 </div>
+            <!-- クリックボタン　テキスト送り -->
+            <input id="button1" type="button" value="▽NEXT" onclick="getNumber()">
+    </div>
+<a href="https://twitter.com/intent/tweet?button_hashtag=%E3%82%82%E3%81%97N" class="twitter-hashtag-button">Tweet #%E3%82%82%E3%81%97N</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</center>
+
+</body>
+</html>
