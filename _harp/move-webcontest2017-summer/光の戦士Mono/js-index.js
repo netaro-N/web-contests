@@ -91,59 +91,59 @@ img[26].src = "img/boku-image.png";
 
 var imgbg = new Array();
 imgbg[0] = new Image();
-imgbg[0].src = "./img/end.JPEG";
+imgbg[0].src = "./img/end.jpeg";
 imgbg[1] = new Image();
-imgbg[1].src = "./img/2-image.JPEG";
+imgbg[1].src = "./img/2-image.jpeg";
 imgbg[2] = new Image();
-imgbg[2].src = "./img/2-image.JPEG";
+imgbg[2].src = "./img/2-image.jpeg";
 imgbg[3] = new Image();
 imgbg[3].src = "./img/2-image.jpeg";
 imgbg[4] = new Image();
 imgbg[4].src = "./img/2-image.jpeg";
 imgbg[5] = new Image();
-imgbg[5].src = "./img/2-image.JPEG";
+imgbg[5].src = "./img/2-image.jpeg";
 imgbg[6] = new Image();
-imgbg[6].src = "./img/3-image.JPEG";
+imgbg[6].src = "./img/3-image.jpeg";
 imgbg[7] = new Image();
-imgbg[7].src = "./img/4-image.JPEG";
+imgbg[7].src = "./img/4-image.jpeg";
 imgbg[8] = new Image();
-imgbg[8].src = "./img/5-image.JPEG";
+imgbg[8].src = "./img/5-image.jpeg";
 imgbg[9] = new Image();
-imgbg[9].src = "./img/6-image.JPEG";
+imgbg[9].src = "./img/6-image.jpeg";
 imgbg[10] = new Image();
-imgbg[10].src = "./img/7-image.JPEG";
+imgbg[10].src = "./img/7-image.jpeg";
 imgbg[11] = new Image();
-imgbg[11].src = "./img/8-image.JPEG";
+imgbg[11].src = "./img/8-image.jpeg";
 imgbg[12] = new Image();
-imgbg[12].src = "./img/8-image.JPEG";
+imgbg[12].src = "./img/8-image.jpeg";
 imgbg[13] = new Image();
-imgbg[13].src = "./img/8-image.JPEG";
+imgbg[13].src = "./img/8-image.jpeg";
 imgbg[14] = new Image();
-imgbg[14].src = "./img/8-image.JPEG";
+imgbg[14].src = "./img/8-image.jpeg";
 imgbg[15] = new Image();
-imgbg[15].src = "./img/8-image.JPEG";
+imgbg[15].src = "./img/8-image.jpeg";
 imgbg[16] = new Image();
-imgbg[16].src = "./img/8-image.JPEG";
+imgbg[16].src = "./img/8-image.jpeg";
 imgbg[17] = new Image();
-imgbg[17].src = "./img/8-image.JPEG";
+imgbg[17].src = "./img/8-image.jpeg";
 imgbg[18] = new Image();
-imgbg[18].src = "./img/8-image.JPEG";
+imgbg[18].src = "./img/8-image.jpeg";
 imgbg[19] = new Image();
-imgbg[19].src = "./img/8-image.JPEG";
+imgbg[19].src = "./img/8-image.jpeg";
 imgbg[20] = new Image();
-imgbg[20].src = "./img/8-image.JPEG";
+imgbg[20].src = "./img/8-image.jpeg";
 imgbg[21] = new Image();
-imgbg[21].src = "./img/8-image.JPEG";
+imgbg[21].src = "./img/8-image.jpeg";
 imgbg[22] = new Image();
-imgbg[22].src = "./img/8-image.JPEG";
+imgbg[22].src = "./img/8-image.jpeg";
 imgbg[23] = new Image();
-imgbg[23].src = "./img/8-image.JPEG";
+imgbg[23].src = "./img/8-image.jpeg";
 imgbg[24] = new Image();
-imgbg[24].src = "./img/8-image.JPEG";
+imgbg[24].src = "./img/8-image.jpeg";
 imgbg[25] = new Image();
-imgbg[25].src = "./img/8-image.JPEG";
+imgbg[25].src = "./img/8-image.jpeg";
 imgbg[26] = new Image();
-imgbg[26].src = "./img/8-image.JPEG";
+imgbg[26].src = "./img/8-image.jpeg";
 
 
 //初期条件
@@ -165,7 +165,7 @@ function onRadioButtonChange() {
 		img[23] = new Image();
 		img[23].src = "img/kan-image.png";
 		imgbg[0] = new Image();
-		imgbg[0].src = "./img/gameover.JPEG";
+		imgbg[0].src = "./img/gameover.jpeg";
 	}
 	else if (radiobtn2.checked == true) {
 		target.innerHTML = "マネージャーが選択されました。<br/>";
@@ -174,14 +174,14 @@ function onRadioButtonChange() {
 		img[23] = new Image();
 		img[23].src = "img/mana-image.png";
 		imgbg[0] = new Image();
-		imgbg[0].src = "./img/gameover.JPEG";
+		imgbg[0].src = "./img/gameover.jpeg";
 	} else{
 		storyTextList[0] = "クリア！！！このゲームにお付き合いいただきありがとう！";
 		storyTextList[23] = "・・・・・・。これまでの自分自身を信じるんだ。監督も、マネージャー、チームメイトのみんなの想いがあって今の「僕」がここにいいる。<br>自分自身の決断行動こそが、みんなのためでもあるし、何より後悔しない自分のためだ。なんだか、スッキリした気持ちになる。";//選択肢で変わる文章
 		img[23] = new Image();
 		img[23].src = "img/boku-image.png";
 		imgbg[0] = new Image();
-		imgbg[0].src = "./img/end.JPEG";
+		imgbg[0].src = "./img/end.jpeg";
 	}
 }
 
