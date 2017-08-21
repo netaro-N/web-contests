@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="FizzBuzz.css">
+    <title>FBplay</title>
+</head>
+
+<body>
+
+    <div class="playarea">
+        <!-- css:10行目 全体枠の大きさ指定　640px 380px -->
+
+
+        <!-- -----------------  背景の動画の配置  ------------------ -->
+        <video id="starbg" src="images/nc44394.mp4" autoplay loop></video>
+        <!-- css:96行目 背景動画の配置と設定 自動的に動画開始・ループ　-->
+
+
+        <!-- -----------------  最初の画面に戻るボタン  ------------------ -->
+        <input type="button" id="backbutton" value="back" onClick="location.href='FizzBuzz.html'">
+        <!-- css:79行目 ゲームタイトル画面にジャンプ　-->
+
+
+
+        <!-- -----------------  難易度設定ボタン  ------------------ -->
+        <div class="select">
+            <!-- css:138行目 難易度ボタンの位置の設定　-->
+
+            <input type="button" id="easy" value="EASY" onClick="location.href='easy.html'">
+            <!-- css:149行目 イージーボタンの設定　-->
+            <b>　　</b>
+            <!-- ボタンとボタンの間を作るだけのもの　-->
+
+            <input type="button" id="normal" value="NOR" onClick="location.href='normal.html'">
+            <!-- css:163行目 ノーマルボタンの設定　-->
+            <b>　　</b>
+
+            <input type="button" id="hard" value="HARD" onClick="location.href='hard.html'">
+            <!-- css:177行目 ハードボタンの設定　-->
+            <br><br>
+
+            <b id="text2">モードを選んでね！</b>
+            <!-- css:無し スクリプトの為のid。-->
+
+
+        </div>
+        <!-- <div class="select">　-->
+
+
+        <!-- -----------------  うしさん枠  ------------------ -->
+        <div id="usisancoment">
+            <!-- css:103行目 コメント欄の位置設定　-->
+
+            <img id="usi" src="images/cow_2.gif">
+            <!-- 牛コメントdivの枠に牛の画像、直ばり　-->
+
+            <div id="usicomeran">
+                <!-- css:126行目 テキストの位置とフォントの設定　-->
+                FizzBuzzの遊び方
+                <script src="js/usisan.js"></script>
+                <!-- うしさんのコメントを流すスクリプト　-->
+            </div>
+
+        </div>
+        <!-- <div id="usisancoment">　-->
+
+    </div>
+    <!-- <div class="playarea">　-->
+
+</body>
+
+</html>

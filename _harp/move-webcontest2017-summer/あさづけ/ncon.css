@@ -1,0 +1,544 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Josefin Slab', 'Myriad Pro', Arial, sans-serif;
+    text-shadow: 1px 1px 3px #3E454C;
+    background-color: #FF7F66;
+}
+
+.header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100vw;
+    height: 35px;
+    color: #FFF6F5;
+    font-size: 16px;
+    font-weight: 800;
+    border-bottom: 2px dotted snow;
+    background-color: #4F1199;
+    z-index: 1000;
+}
+
+#linkarea {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    height: 35px;
+    width: 600px;
+}
+
+#button1 {
+    background-color: #4F1199;
+    color: snow;
+    font-weight: 700;
+}
+
+
+/* 位置確認用　border-bottom: 2px dotted snow;
+ -----*/
+
+.fooder {
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    margin: 0 auto;
+    padding: 5px 0px 0px 10px;
+    width: 100vw;
+    height: 30px;
+    border-top: 2px dotted snow;
+    background-color: #4F1199;
+    z-index: 1000;
+}
+
+#panda {
+    display: inline-flex;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    height: 180px;
+    width: 150px;
+    background: url('images/panda.png') no-repeat;
+    /*
+    border: 1px dotted snow;
+    */
+    z-index: 1001;
+}
+
+#pandacome {
+    display: inline-block;
+    position: fixed;
+    bottom: 220px;
+    right: 50px;
+    width: 460px;
+    height: 30px;
+    padding: 1px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 800;
+    color: black;
+    background-color: snow;
+    background-image: url('images/bg_16.gif');
+    text-shadow: 1px 1px 2px gray;
+    border: 2px dotted rosybrown;
+    -webkit-border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    z-index: 1001;
+}
+
+.clockarea {
+    display: inline-block;
+    position: fixed;
+    bottom: 40px;
+    right: 160px;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    text-align: top;
+    color: white;
+    z-index: 1000;
+}
+
+#byoushin {
+    display: inline-block;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 20px 0px 0px 0px;
+    height: 200px;
+    width: 200px;
+    color: white;
+    z-index: 1005;
+    opacity: 1;
+}
+
+#ball {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    height: 200px;
+    width: 200px;
+    background: url('images/tama.png')no-repeat;
+    opacity: 1;
+    z-index: 1000;
+}
+
+#timewaku {
+    display: inline-block;
+    position: absolute;
+    left: -4px;
+    top: 105px;
+    width: 200px;
+    color: snow;
+    font-size: 18px;
+    font-weight: 800;
+    text-shadow: 3px 3px 2px royalblue;
+    z-index: 1005;
+}
+
+#video {
+    display: block;
+    position: relative;
+    top: 35px;
+    left: 0;
+    text-align: center;
+    background-color: black;
+    margin: 0 auto;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+#all {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    margin: 0 auto;
+    padding: 0;
+    background-color: snow;
+    width: 100％;
+    height: 350px;
+    z-index: 5;
+}
+
+.twpage {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 350px;
+    background-color: snow;
+    border: 5px double royalblue;
+    z-index: 5;
+}
+
+.twpage2 {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 500px;
+    width: 500px;
+    height: 350px;
+    background-color: snow;
+    border: 5px double royalblue;
+    z-index: 5;
+}
+
+.twpage3 {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 1000px;
+    width: 500px;
+    height: 350px;
+    background-color: snow;
+    border: 5px double royalblue;
+    z-index: 5;
+}
+
+.twpage4 {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 1500px;
+    width: 410px;
+    height: 350px;
+    background-color: snow;
+    border: 5px double royalblue;
+    z-index: 5;
+}
+
+#calendarwaku {
+    display: inline-block;
+    position: fixed;
+    bottom: 240px;
+    right: 50px;
+    height: 280px;
+    width: 280px;
+    color: snow;
+    font-family: 'Josefin Slab', 'Myriad Pro', Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 800;
+    text-shadow: 2px 2px 5px royalblue;
+    opacity: 0.8;
+    z-index: 100;
+}
+
+#calendar-table {
+    display: inline-block;
+    position: absolute;
+    right: 12px;
+    top: 0;
+    text-align: center;
+    margin: 10px;
+}
+
+#tuki {
+    text-align: left;
+    /*月のテキストだけを左揃え*/
+}
+
+#days {
+    position: absolute;
+    bottom: 5px;
+    right: 130px;
+    padding: 2px;
+    color: snow;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 1px dotted snow;
+}
+
+#title {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 600px;
+    padding: 0;
+    text-align: left;
+    font-size: 32px;
+    font-weight: 800;
+    color: snow;
+    text-shadow: 1px 1px 3px blue;
+    z-index: 150;
+}
+
+.marker-b {
+    background: linear-gradient(transparent 50%, royalblue 0%);
+}
+
+#omikujikaeru {
+    position: absolute;
+    bottom: 100px;
+    left: 410px;
+    height: 150px;
+    width: 150px;
+    background: url('images/tuntun.png') no-repeat;
+    opacity: 0.8;
+    z-index: 100;
+}
+
+#swing {
+    position: absolute;
+    bottom: 5px;
+    right: 100px;
+    height: 100px;
+    width: 154px;
+    background-image: url('images/swing.png');
+    z-index: 2;
+}
+
+#cloud {
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    right: 650px;
+    height: 50px;
+    width: 141px;
+    background: url('images/cloud.png') no-repeat;
+    z-index: 2;
+}
+
+#tree {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    height: 103px;
+    width: 100px;
+    background-image: url('images/tree.png');
+    z-index: 2;
+}
+
+#hill {
+    position: absolute;
+    bottom: 10px;
+    right: 40px;
+    height: 100px;
+    width: 288px;
+    background-image: url('images/hill.png');
+    z-index: 1;
+}
+
+.text-m {
+    font-size: 18px;
+    text-shadow: 1px 1px 2px gray;
+}
+
+.text-s {
+    font-size: 16px;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px gray;
+    z-index: 5;
+}
+
+.marker-r {
+    background: linear-gradient(transparent 50%, red 0%);
+}
+
+#emp {
+    color: gold;
+    text-shadow: 1px 1px 10px red;
+}
+
+#torii {
+    position: absolute;
+    bottom: 70px;
+    left: 310px;
+    height: 128px;
+    width: 110px;
+    background-image: url('images/torii.png');
+    opacity: 0.8;
+    z-index: 100;
+}
+
+#assessment {
+    position: absolute;
+    bottom: 150px;
+    left: 620px;
+    height: 30px;
+    width: 100px;
+    padding: 1px;
+    text-align: center;
+    color: snow;
+    font-size: 14px;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px #3E454C;
+    background-color: goldenrod;
+    z-index: 101;
+}
+
+#moon {
+    position: absolute;
+    bottom: 240px;
+    right: 90px;
+    height: 156px;
+    width: 256px;
+    background-image: url('images/omikujim.png');
+    opacity: 0.8;
+    z-index: 100;
+}
+
+#resultarea {
+    position: absolute;
+    bottom: 298px;
+    right: 220px;
+    height: 45px;
+    width: 100px;
+    text-align: center;
+    color: snow;
+    font-size: 26px;
+    font-weight: 900;
+    text-shadow: 2px 2px 5px black;
+    opacity: 0.8;
+    z-index: 101;
+}
+
+#button2 {
+    background-color: #4F1199;
+    color: snow;
+    font-weight: 700;
+}
+
+#fizzbuzz {
+    display: none;
+    position: fixed;
+    top: 15%;
+    left: 20vw;
+    height: 380px;
+    width: 640px;
+    z-index: 1001;
+}
+
+.textarea {
+    display: block;
+    position: relative;
+    top: -35px;
+    left: 5%;
+    height: 550px;
+    width: 950px;
+    z-index: 1;
+}
+
+#ribon {
+    display: block;
+    position: relative;
+    top: 40px;
+    left: 0px;
+    height: 40px;
+    width: 100%;
+    background-image: url('images/bgimg2.jpg');
+    background-repeat: repeat;
+    border-top: 4px dotted snow;
+    border-bottom: 4px dotted snow;
+}
+
+.textarea2 {
+    display: inline-block;
+    position: static;
+    height: 1000px;
+    width: 100%;
+    top: 10px;
+    left: 0px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: snow;
+    z-index: 1;
+}
+
+#ribon2 {
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 40px;
+    width: 100%;
+    background-image: url('images/ribonpr.jpg');
+    background-repeat: repeat;
+    border-top: 4px dotted snow;
+    border-bottom: 4px dotted snow;
+}
+
+#text2p {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 8%;
+    height: 800px;
+    width: 800px;
+    background-color: snow;
+    box-shadow: 1px 1px 5px royalblue;
+    border: 3px dotted rosybrown;
+}
+
+.textp2-s {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    text-shadow: 1px 1px 2px gray;
+    z-index: 5;
+}
+
+.marker-o {
+    background: linear-gradient(transparent 50%, orange 0%);
+}
+
+.textarea3 {
+    display: inline-block;
+    position: static;
+    height: 850px;
+    width: 100%;
+    top: 10px;
+    left: 0px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: royalblue;
+    z-index: 1;
+}
+
+#ribon3 {
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 40px;
+    width: 100%;
+    background-image: url('images/ribonsky.jpg');
+    background-repeat: repeat;
+    border-top: 4px dotted snow;
+    border-bottom: 4px dotted snow;
+}
+
+#text3p {
+    display: block;
+    position: relative;
+    top: 100px;
+    left: 10%;
+    height: 600px;
+    width: 800px;
+    box-shadow: 1px 1px 3px gray;
+    border: 1px dotted snow;
+}
+
+.textp3-s {
+    font-size: 16px;
+    font-weight: 500;
+    color: snow;
+    text-shadow: 1px 1px 2px gray;
+    z-index: 5;
+}
+
+a {
+    color: snow;
+}

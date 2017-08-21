@@ -1,0 +1,358 @@
+    html,
+    body {
+        font-family: 'Josefin Slab', 'Myriad Pro', Arial, sans-serif;
+        text-shadow: 1px 1px 3px #3E454C;
+        background-color: snow;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .playarea {
+        display: block;
+        position: relative;
+        width: 640px;
+        height: 380px;
+        background-image: url('images/bg1.jpg');
+        margin: 10 auto;
+    }
+    
+    #title {
+        display: block;
+        position: absolute;
+        top: 80px;
+        left: 180px;
+        width: 300px;
+        height: 50px;
+        font-size: 42px;
+        font-weight: 800;
+        color: gold;
+        text-align: center;
+        text-shadow: 1px 1px 10px red;
+        border-bottom: 5px double snow;
+        z-index: 10;
+    }
+    
+    #startbutton {
+        display: inline-block;
+        position: absolute;
+        top: 240px;
+        left: 310px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 900;
+        -webkit-border-radius: 30px;
+        color: royalblue;
+        background-color: orange;
+        box-shadow: 0px 0px 10px gray;
+        z-index: 5;
+    }
+    
+    .text {
+        font-size: 18px;
+        font-weight: 800;
+        color: snow;
+        text-shadow: 1px 1px 3px #3E454C;
+        z-index: 5;
+    }
+    
+    #text1 {
+        display: inline-block;
+        position: absolute;
+        top: 300px;
+        left: 230px;
+        z-index: 5;
+    }
+    
+    #doubutu {
+        display: inline-block;
+        position: absolute;
+        top: 150px;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(black, darkmagenta, black);
+        z-index: 1;
+    }
+    
+    #backbutton {
+        display: inline-block;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 50px;
+        height: 20px;
+        text-align: center;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 900;
+        color: royalblue;
+        background-color: none;
+        box-shadow: 0px 0px 5px gray;
+        z-index: 5;
+    }
+    
+    #starbg {
+        display: block;
+        position: relative;
+        width: 640px;
+        height: 380px;
+    }
+    
+    #usisancoment {
+        display: inline-block;
+        position: absolute;
+        bottom: 15px;
+        width: 600px;
+        height: 80px;
+        margin: 5px;
+        padding: 10px;
+        background-color: black;
+        border: 5px double snow;
+        overflow: hidden;
+    }
+    
+    #usi {
+        display: inline-block;
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        width: 80px;
+        height: 80px;
+        image-rendering: pixelated;
+    }
+    
+    #usicomeran {
+        display: inline-block;
+        position: absolute;
+        top: 7px;
+        left: 100px;
+        width: 500px;
+        height: 82px;
+        color: snow;
+        text-shadow: 1px 1px 3px gray;
+        font-weight: 800;
+    }
+    
+    .select {
+        display: inline-block;
+        position: absolute;
+        top: 125px;
+        left: 125px;
+        width: 400px;
+        height: 52px;
+        text-align: center;
+        color: snow;
+    }
+    
+    #easy {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 900;
+        color: snow;
+        -webkit-border-radius: 30px;
+        background-color: green;
+        box-shadow: 0px 0px 10px gray;
+        z-index: 5;
+    }
+    
+    #normal {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 900;
+        color: gray;
+        -webkit-border-radius: 30px;
+        background-color: yellow;
+        box-shadow: 0px 0px 10px gray;
+        z-index: 5;
+    }
+    
+    #hard {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 900;
+        color: snow;
+        -webkit-border-radius: 30px;
+        background-color: red;
+        box-shadow: 0px 0px 10px gray;
+        z-index: 5;
+    }
+    
+    #numarea {
+        display: inline-block;
+        position: absolute;
+        top: 80px;
+        left: 200px;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        border: 10px double green;
+        -webkit-border-radius: 120px;
+        text-align: center;
+        color: green;
+        font-size: 130px;
+        font-weight: 800;
+    }
+    
+    #pass {
+        display: inline-block;
+        position: absolute;
+        bottom: 140px;
+        right: 35px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 900;
+        color: snow;
+        -webkit-border-radius: 30px;
+        background-color: royalblue;
+        box-shadow: 0px 0px 10px gray;
+        z-index: 5;
+    }
+    
+    #fizz {
+        display: inline-block;
+        position: absolute;
+        bottom: 90px;
+        right: 60px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 900;
+        color: snow;
+        -webkit-border-radius: 30px;
+        background-color: royalblue;
+        box-shadow: 0px 0px 10px gray;
+        z-index: 5;
+    }
+    
+    #buzz {
+        display: inline-block;
+        position: absolute;
+        bottom: 50px;
+        right: 100px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 900;
+        color: snow;
+        -webkit-border-radius: 30px;
+        background-color: royalblue;
+        box-shadow: 0px 0px 10px gray;
+        z-index: 5;
+    }
+    
+    #fizzbuzz {
+        display: inline-block;
+        position: absolute;
+        bottom: 20px;
+        right: 150px;
+        width: 70px;
+        height: 50px;
+        text-align: center;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 900;
+        color: snow;
+        -webkit-border-radius: 30px;
+        background-color: royalblue;
+        box-shadow: 0px 0px 10px gray;
+        z-index: 5;
+    }
+    
+    #scorearea {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 200px;
+        height: 24px;
+        text-align: right;
+        font-size: 18px;
+        font-weight: 900;
+        color: snow;
+        border-bottom: 3px solid red;
+    }
+    
+    .result {
+        display: block;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 640px;
+        height: 380px;
+    }
+    
+    #scoreboard {
+        display: block;
+        position: absolute;
+        top: 120px;
+        left: 15px;
+        width: 600px;
+        height: 150px;
+        border: 3px dotted snow;
+        text-align: center;
+        color: snow;
+        font-size: 50px;
+        font-weight: 800;
+    }
+    
+    #hyouka {
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        width: 640px;
+        height: 100px;
+        text-align: center;
+        color: gold;
+        text-shadow: 1px 1px 30px red;
+        font-size: 100px;
+        font-weight: 700;
+    }
+    
+    .happyou {
+        display: block;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 640px;
+        height: 380px;
+    }
+    
+    #kekka {
+        display: block;
+        position: absolute;
+        top: 150px;
+        left: 0px;
+        width: 640px;
+        height: 100px;
+        ;
+        text-align: center;
+        color: gold;
+        font-size: 50px;
+        font-weight: 800;
+    }
+    
+    #tweetarea {
+        display: inline-block;
+        position: absolute;
+        bottom: 10px;
+        left: 240px;
+    }

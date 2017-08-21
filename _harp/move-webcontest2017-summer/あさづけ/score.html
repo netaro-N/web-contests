@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="FizzBuzz.css">
+    <title>score</title>
+</head>
+
+<body>
+
+    <div class="result">
+        <!-- css:293行目 全体枠の大きさ指定　640px 380px -->
+
+        <video id="starbg" src="images/scoa.mp4" height="380" autoplay noloop></video>
+        <!-- css:96行目 背景動画の配置と設定 自動的に動画開始・ループ無し　-->
+
+        <input type="button" id="backbutton" value="back" onClick="location.href='FizzBuzz.html'">
+        <!-- css:79行目 ゲームタイトル画面にジャンプ　-->
+
+
+        <!-- 結果をツィートする機能部分。講義のあれです。 -->
+
+        <div id="tweetarea">
+            <!-- css:353行目 ツィートボタンの配置位置設定　-->
+
+            <script>
+                ! function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0],
+                        p = /^http:/.test(d.location) ? 'http' : 'https';
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = p + '://platform.twitter.com/widgets.js';
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, 'script', 'twitter-wjs');
+            </script>
+
+            <script src="js/tweet.js"></script>
+
+        </div>
+        <!-- ----------ツィート機能ここまで ---------------------------------- -->
+
+
+
+    </div>
+    <div id="scoreboard"></div>
+    <!-- css:302行目 スコア表示位置の設定　-->
+    <div id="hyouka"></div>
+    <!-- css:316行目 評価表示位置の設定　-->
+
+
+    <script src="js/scoreboard.js"></script>
+</body>
+
+</html>

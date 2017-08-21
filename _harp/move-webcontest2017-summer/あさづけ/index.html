@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="ncon.css">
+    <title>Ncon</title>
+</head>
+
+<body>
+
+
+    <!-- ------------------------------------------------ -->
+    <!--            ↓↓　　ヘッダーエリア　　↓↓              -->
+    <!-- ------------------------------------------------ -->
+
+    <div class="header">
+        <!-- css:12行目 -->
+
+        <div id="linkarea">
+            <!-- css:28行目 リンクボタン枠の位置設定 -->
+
+
+            <!-- リンクボタンテーブル -->
+
+            <table border="0" align="right">
+
+
+                <tr>
+                    <td>
+                        <font color="skybule"><b>||</b></font>
+                    </td>
+
+                    <td>
+                        <button id="button2">FizzBuzz!</button>
+                        <!-- css:408行目 ボタンのフォントと背景色　-->
+
+                        <script src="js/button2.js"></script>
+                        <!-- onclickでミニゲームのフレームを表示させるスクリプト -->
+                    </td>
+
+                    <td>
+                        <font color="skybule"><b>||</b></font>
+                    </td>
+                    <td>
+
+                        <button id="button1">Twitter@Check!</button>
+                        <!-- css:37行目 ボタンのフォントと背景色　-->
+
+                        <script src="js/button1.js"></script>
+                        <!-- onclickでツイッターのフレームを表示させるスクリプト -->
+                    </td>
+
+                    <td>
+                        <font color="skybule"><b>||</b></font>
+                    </td>
+
+                </tr>
+
+            </table>
+            <!--リンクボタンテーブルここまで-->
+
+        </div>
+        <!-- div id="linkarea" -->
+
+    </div>
+    <!-- div class="header" -->
+
+
+
+
+
+    <!-- ------------------------------------------------ -->
+    <!--       ↑↑　　ヘッダーエリアここまで　　↑↑  　　      -->
+    <!-- ------------------------------------------------ -->
+
+
+
+    <!-- ============================================================== -->
+
+
+    <!-- ------------------------------------------------ -->
+    <!--            ↓↓　　フッダーエリア　　↓↓              -->
+    <!-- ------------------------------------------------ -->
+
+
+    <div class="fooder">
+        <!-- css:47行目 フッターの位置固定などフッター全般の設定　-->
+
+        <div id="days">
+            <!-- css:251行目 日付を表示位置の設定。
+                id=daysはスクリプトで使用中。改名注意 -->
+
+            <script src="js/hizuke.js"></script>
+            <!-- 日付を表示するスクリプト -->
+
+        </div>
+
+    </div>
+    <!-- div class="fooder"-->
+
+
+    <!-- ------------------------------------------------ -->
+    <!--       ↑↑　　フッダーエリアここまで　　↑↑  　　      -->
+    <!-- ------------------------------------------------ -->
+
+
+
+    <!-- ============================================================== -->
+
+
+
+
+    <!-- ------------------------------------------------ -->
+    <!--       　 ↓↓　　パンダ・時計エリア　　↓↓            -->
+    <!-- ------------------------------------------------ -->
+
+
+    <!-- パンダ画像配置 -->
+    <div id="panda">
+        <!-- css:61行目 パンダの画像と位置設定　-->
+    </div>
+
+    <!-- ------------- -->
+
+
+    <!-- パンダセリフ枠 -->
+
+    <div id="pandacome">
+        <!-- css:75行目 セリフ枠設定ここ-->
+        <script src="js/pandasan.js"></script>
+        <!-- パンダのセリフを出力するスクリプト -->
+    </div>
+
+    <!-- ------------- -->
+
+
+    <!-- 時計関連枠 -->
+
+    <div class="clockarea">
+        <!-- css:96行目 時計位置設定ここ-->
+
+        <div id="byoushin">
+            <!-- css:109行目 秒針の設定ここ-->
+
+            <img id="hari" width=100% hight=100% src="images/hosi.png">
+            <!-- ===スクリプトでid使用中。id名変更注意===
+                    秒針に使ってる画像をhtmlで直貼り -->
+
+            <script src="js/tokei.js"></script>
+            <!-- 画像を回転させるスクリプト -->
+
+        </div>
+        <!-- <div id="byoushin"> -->
+
+        <!-- ------------- -->
+
+
+        <!-- ボール画像 -->
+        <div id="ball">
+            <!-- css:122行目 ボール画像の設定ここ -->
+        </div>
+        <!-- ------------- -->
+
+
+        <!-- デジタル時計   -->
+        <div id="timewaku">
+            <!-- css:134行目 デジタル時計位置設定ここ-->
+            <!-- ===スクリプトでid使用中。id名変更注意=== -->
+
+            <script src="js/genzainojikan.js"></script>
+            <!-- デジタル時計を表示させるスクリプト -->
+
+        </div>
+
+    </div>
+    <!-- div class="clockarea" -->
+
+
+    <!-- ------------------------------------------------ -->
+    <!--      ↑↑　　パンダ・時計エリアここまで　　↑↑ 　      -->
+    <!-- ------------------------------------------------ -->
+
+
+
+
+    <!-- ============================================================== -->
+
+
+
+
+    <!-- ------------------------------------------------ -->
+    <!--   ↓↓　　上辺の動画・ツィッター設置設定エリア　　↓↓   -->
+    <!-- ------------------------------------------------ -->
+
+
+
+    <!-- ビデオ設置 -->
+
+    <div id="video">
+        <!-- css:147行目 動画の位置と設定ここ-->
+
+        <video src="images/nkou.mp4" width="750" height="350" autoplay loop></video>
+        <video src="images/nkou2.mp4" width="750" height="350" autoplay loop></video>
+        <!-- 動画を自動的に再生とループ指定 -->
+
+    </div>
+
+    <!-- ------------- -->
+
+
+    <!-- ツイッターガシェット設置ここ -->
+
+    <div id="all">
+        <!-- css:160行目 ガシェット全体の枠設定ここ-->
+        <!-- ボタンスクリプトでid使用中。改名注意 -->
+
+
+        <div class="twpage">
+            <!-- css:173行目 N高ツイ設置設定-->
+
+            <a class="twitter-timeline" href="https://twitter.com/search?q=nhigh_info" data-widget-id="885705045810962432">nhigh_infoに関するツイート</a>
+            <script>
+                ! function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0],
+                        p = /^http:/.test(d.location) ? 'http' : 'https';
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = p + "://platform.twitter.com/widgets.js";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, "script", "twitter-wjs");
+            </script>
+
+        </div>
+        <!-- div class="twpage" -->
+
+        <!-- ------------- -->
+
+        <div class="twpage2">
+            <!-- css:185行目 N予備校ツイ設置設定-->
+
+            <a class="twitter-timeline" href="https://twitter.com/search?q=n_yobikou" data-widget-id="885683356804894721">n_yobikouに関するツイート</a>
+            <script>
+                ! function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0],
+                        p = /^http:/.test(d.location) ? 'http' : 'https';
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = p + "://platform.twitter.com/widgets.js";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, "script", "twitter-wjs");
+            </script>
+
+        </div>
+        <!-- div class="twpage2" -->
+
+        <!-- ------------- -->
+
+        <div class="twpage3">
+            <!-- css:197行目 NHKツイ設置設定-->
+
+            <a class="twitter-timeline" href="https://twitter.com/search?q=nhk_news" data-widget-id="885772119417671680">nhk_newsに関するツイート</a>
+            <script>
+                ! function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0],
+                        p = /^http:/.test(d.location) ? 'http' : 'https';
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = p + "://platform.twitter.com/widgets.js";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, "script", "twitter-wjs");
+            </script>
+
+        </div>
+        <!-- div class="twpage3" -->
+
+        <!-- ------------- -->
+
+        <div class="twpage4">
+            <!-- css:209行目 天気ツイ設置設定-->
+
+            <a class="twitter-timeline" href="https://twitter.com/search?q=tenkijp%20%40tenkijp" data-widget-id="885780066604433408">tenkijp @tenkijpに関するツイート</a>
+            <script>
+                ! function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0],
+                        p = /^http:/.test(d.location) ? 'http' : 'https';
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = p + "://platform.twitter.com/widgets.js";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, "script", "twitter-wjs");
+            </script>
+
+        </div>
+        <!-- div class="twpage4" -->
+
+    </div>
+    <!-- div id="all" -->
+
+
+
+    <!-- ------------------------------------------------------- -->
+    <!--      ↑↑　　上辺の動画・ツィッターエリアここまで　　↑↑ 　    -->
+    <!-- ------------------------------------------------------- -->
+
+
+
+    <!-- ============================================================== -->
+
+
+
+
+    <!-- ------------------------------------------------ -->
+    <!--       ↓↓　　カレンダーエリア　　↓↓  　　　　　　    -->
+    <!-- ------------------------------------------------ -->
+
+
+
+    <div id="calendarwaku">
+        <!-- css:221行目 カレンダー位置の設定-->
+
+        <table id="calendar-table">
+            <!-- css:237行目 カレンダーテーブル位置とフォントの設定-->
+            <!-- カレンダー日付枠作成。セルにid。スクリプトに使用中。-->
+
+            <tr>
+                <td colspan=7 id="tuki">
+                    <!-- セルを７つ横断 -->
+                    <!-- id=monthはcalendar.jsの今月表示関数の表示エリアのみに使用。
+                    cssの設定は無し 「 + m + 月 」-->
+                    <b id="month">月</b>
+                </td>
+            </tr>
+
+
+            <tr>
+                <!-- 曜日設定スクリプトで使う枠 css設定無し-->
+                <!-- cal-week.jsでid使用中。-->
+
+                <td id="w1"></td>
+                <td id="w2"></td>
+                <td id="w3"></td>
+                <td id="w4"></td>
+                <td id="w5"></td>
+                <td id="w6"></td>
+                <td id="w7"></td>
+
+            </tr>
+
+
+
+            <tr>
+                <!-- 三週までの日付はなにも無し -->
+                <td> 1</td>
+                <td> 2</td>
+                <td> 3</td>
+                <td> 4</td>
+                <td> 5</td>
+                <td> 6</td>
+                <td> 7</td>
+            </tr>
+            <tr>
+                <td> 8</td>
+                <td> 9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+            </tr>
+
+            <!-- ------------- -->
+
+            <tr>
+                <!-- calendar.jsにてid使用中 css設定無し -->
+                <!-- 月によって数字を[-]に書き換え -->
+
+                <td>
+                    <div id="d29">29</div>
+                </td>
+
+                <td id="d30">30</td>
+                <td id="d31">31</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </table>
+
+    </div>
+    <!-- div id="calendarwaku"-->
+
+    <!--　カレンダー関連スクリプト置き場 -->
+    <script src="js/calendar.js"></script>
+    <script src="js/cal-week.js"></script>
+    <!-- ---------------------------- -->
+
+
+    <!-- ------------------------------------------------ -->
+    <!--      　　↑↑　　カレンダーエリアここまで　　↑↑ 　    -->
+    <!-- ------------------------------------------------ -->
+
+
+
+
+    <!-- ============================================================== -->
+
+
+
+
+    <!-- ------------------------------------------------ -->
+    <!--        　　↓↓ 　　１ページ目　   　↓↓ 　　　 　     -->
+    <!-- ------------------------------------------------ -->
+
+
+
+    <div id="ribon">
+        <!-- css:434行目 テープ画像設定　-->
+
+        <div id="cloud">
+            <!-- css:303行目 雲画像と位置設定　id=cloudはjsで使用中　-->
+            <script src="js/cloud.js "></script>
+            <!-- 雲を動かすスクリプト -->
+        </div>
+
+        <div class="textarea">
+            <!-- css:424行目 テキストエリアの位置設定　-->
+
+            <div id="title">
+                <!-- css:262行目 ページタイトル配置設定　-->
+
+                <span class="marker-b">N高 動くWebページコンテスト 2017夏</span>
+                <!-- css:278行目 マーカーの設定[青色]　-->
+
+                <br><br>
+                <h2 class="text-m">
+                    <!-- css:334行目 基本フォントサイズを18pxに設定　-->
+                    このページのテーマは<br> 「
+                    <font size="22px" color="royalblue">N</font>予備校で、今の
+                    <font color="gold">高校生</font>が学ぶウェブ技術に
+                    <b class="marker-r">追いつこう！</b>」です。
+                    <!-- css:346行目 マーカーの設定[赤色]　-->
+                </h2>
+
+
+                <ul class="text-s">
+
+                    <!-- css:339行目 基本フォントサイズを16pxに設定　-->
+                    <li>自身のプログラム経験 </li>
+
+                    <font color="green">HTML</font>　　　:　文字と画像だけの簡単なホームページが作れた程度。<br>
+                    <font color="gold">CSS.</font> 　　　:　コピペするとなぜか使えるという噂を聞いていた程度。<br>
+                    <font color="red">Javascript</font>　:　無し。
+                    <li>予備校での学習時間・・</li>
+                    <b id="emp">　　　　ほぼ一ヶ月！</b><br>
+                    <!-- css:350行目 色と影を金と赤に　-->
+
+                    <img src="images/bikri.png">
+                    <!-- びっくりかえる画像 -->
+
+                </ul>
+
+            </div>
+            <!-- div id="title" -->
+
+
+            <!-- ---------------------------------------------->
+            <!--               おみくじエリア                 -->
+            <!-- ---------------------------------------------->
+
+            <div id="omikujikaeru"></div>
+            <!-- css:282行目 おみくじ関連かえる画像配置-->
+
+            <div id="torii"></div>
+            <!-- css:355行目 鳥居画像配置-->
+
+            <div id="moon"></div>
+            <!-- css:382行目 おみくじ結果表示エリア背景配置-->
+
+
+            <div id="resultarea"></div>
+            <!-- css:393行目 おみくじ結果表示-->
+
+
+            <button id="assessment">今日の運勢</button>
+            <!-- css:358行目 おみくじボタン配置-->
+
+
+            <script src="js/omikuji.js"></script>
+            <!-- おみくじのスクリプト -->
+            <!-- ---------------------------------------------->
+            <!--         　おみくじエリアここまで              -->
+            <!-- ---------------------------------------------->
+
+        </div>
+        <!-- <div class="textarea"> -->
+
+        <!-- ------------------------------------------------ -->
+        <!--        　　↑↑ １ページ目ここまで　 ↑↑ 　　　 　     -->
+        <!-- ------------------------------------------------ -->
+
+
+
+        <!-- ------------------------------------------------ -->
+        <!--        　　↓↓ 　　２ページ目　   　↓↓ 　　　 　     -->
+        <!-- ------------------------------------------------ -->
+
+
+        <div class="textarea2">
+            <!-- css:447行目 ２段目のテキストエリアの設定-->
+
+            <div id="ribon2"></div>
+            <!-- css:460行目 テープ画像2設定　-->
+
+            <div id="text2p">
+                <!-- css:473行目 テキストの枠の設定　-->
+
+                <ul class="textp2-s">
+                    <!-- css:485行目 フォントの設定　-->
+
+                    <b class="marker-o">各コンテンツ説明</b>
+                    <!-- css:493行目 マーカーの設定[オレンジ]　-->
+
+                    <li>カレンダー：new Date()関数から今月の「一日(ついたち)」の曜日データを取得して、<br> 　　　　　　その曜日を基準に、各曜日を設定したテーブルの曜日枠へ出力。<br> 　　　　　　各月で曜日がスライドして曜日と日にちを合わせています。<br> 　　　　　　３０日の月は３１日を数字から「－」に変更。<br> 　　　　　　２月は２９～３１日枠の数字を「－」に変更。
+                    </li>
+                    <br>
+                    <li>時計の秒針：new Date()関数から現在時間の秒を取得して、<br> 　　　　　　秒に６をかけて角度数値に変換してからrotateZ関数に代入してループ。
+                    </li>
+                    <br>
+                    <li>動く画像　：javascriptでcssの画像配置位置数値を増減させています。<br>　　　　　　左右～px以上、以下の時 true,falseとif文で指示して方向をかえています。
+                    </li>
+                    <br>
+                    <li>ぱんださん：各コメントを配列にいれて、一つしゃべるごとに引数を＋１、<br>　　　　　　配列のlengthいっぱいまできたら最初にもどるの関数を、<br>　　　　　　インターバル関数で回しています。
+                    </li>
+                    <br>
+                    <li>おみくじ　：０～４のランダム数を生成して、各数値に大凶～大吉をあてがい<br>　　　　　　onclick関数で出力。<s>（いいところ診断の使いまわし）</s>
+                    </li>
+                    <br>
+                    <li>FizzBuzz：　予備校テキストで作ったフィズバズと、そのあとの授業で習ったもので<br>　　　　　　こねくりまわしたものです。<br>　　　　　　ランダム値関数で出たランダム値をfizzbuzz関数で判断させ、<br>　　　　　　その判断させて出た値とその時に押したボタンと比較して<br>　　　　　　if文で正解不正解を出しています。
+                    </li>
+                    <br><br>
+                    <li>ヘッダー部分、ツィッターチェックとフィズバズの表示<br> 　javascriptでCSSのdisplay値：noneとblockを交互に入れ替え。
+                        <br> 　ページを開いて最初だけ、ボタンをダブルクリックしないと表示されない不具合は、
+                        <br> 　今の私の技量では直せませんでした(;´∀｀)がーん
+                    </li>
+                </ul>
+
+                <div id="swing">
+                    <!-- css:293行目 かえるとウサギの画像配置-->
+                    <!-- id=swingはswing.jsで使用中。-->
+
+                    <script src="js/swing.js "></script>
+                    <!--　ジャイアントスイングのスクリプト -->
+
+                </div>
+
+
+                <div id="tree"></div>
+                <!-- css:314行目　木の配置　-->
+
+                <div id="hill"></div>
+                <!-- css:324行目 丘の配置　-->
+
+            </div>
+            <!-- <div id="text2p"> -->
+
+        </div>
+        <!-- <div class="textarea2"> -->
+
+
+        <!-- ------------------------------------------------ -->
+        <!--        　　↑↑ ２ページ目ここまで　 ↑↑ 　　　 　     -->
+        <!-- ------------------------------------------------ -->
+
+
+
+        <!-- ------------------------------------------------ -->
+        <!--        　　↓↓ 　　３ページ目　   　↓↓ 　　　 　     -->
+        <!-- ------------------------------------------------ -->
+
+
+        <div class="textarea3">
+            <!-- css:497行目 3段目のテキストエリアの設定-->
+
+            <div id="ribon3"></div>
+            <!-- css:510行目 テープ画像3設定　-->
+
+            <div id="text3p">
+                <!-- css:523行目 テキストの枠の設定　-->
+
+                <ul class="textp3-s">
+                    <!-- css:534行目 フォントの設定　-->
+
+                    使用した素材リンク<br>
+                    <!-- css:491行目 マーカーの設定[オレンジ]　-->
+                    -----------------------------------------------------------------------------------------
+                    <li>ニコニコ動画　ニコニ・コモンズ<br>
+                        <a href="http://commons.nicovideo.jp/?header" target="_blank">http://commons.nicovideo.jp/?header</a>
+                    </li>
+                    <br>
+                    <li>Youtube N high-school Channel<br>
+                        <a href="https://www.youtube.com/channel/UC2svCyhzrmkDHzE8yTyid-w" target="_blank">https://www.youtube.com/channel/UC2svCyhzrmkDHzE8yTyid-w</a>
+                    </li>
+                    <br>
+                    <li>Bg-Pattrens
+                        <br>
+                        <a href="http://bg-patterns.com/" target="_blank">http://bg-patterns.com/</a>
+                    </li>
+                    <br>
+                    <li>ダ鳥獣ギ画
+                        <br>
+                        <a href="http://www.chojugiga.com/" target="_blank">http://www.chojugiga.com/</a>
+                    </li>
+                    <br>
+                    <li>効果音ラボ
+                        <br>
+                        <a href="http://soundeffect-lab.info/" target="_blank">http://soundeffect-lab.info/</a>
+                    </li>
+                    <br>
+                    <li>魔王魂
+                        <br>
+                        <a href="http://maoudamashii.jokersounds.com/" target="_blank">http://maoudamashii.jokersounds.com/</a>
+                    </li>
+                    <br>
+                    <li>ソザイガロー
+                        <br>
+                        <a href="http://hpgpixer.jp/" target="_blank">http://hpgpixer.jp/</a>
+                    </li>
+                    <br>
+                    <li>web＊citron
+                        <br>
+                        <a href="http://www.webcitron.com/" target="_blank">http://www.webcitron.com/</a>
+                    </li>
+                    <br>
+                    <li>GATAG
+                        <br>
+                        <a href="http://free-illustrations.gatag.net/" target="_blank">http://free-illustrations.gatag.net/</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- ------------------------------------------------ -->
+        <!--        　　↑↑ ３ページ目ここまで　 ↑↑ 　　　 　     -->
+        <!-- ------------------------------------------------ -->
+
+
+        <!-- ------------------------------------------------ -->
+        <!--       ↓↓　　FizzBuzzエリア　　　↓↓  　　　　　　    -->
+        <!-- ------------------------------------------------ -->
+
+
+        <iframe src="FizzBuzz.html" id="fizzbuzz">
+
+
+</body>
+
+</html>

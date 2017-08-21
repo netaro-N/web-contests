@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="FizzBuzz.css">
+    <title>normal</title>
+</head>
+
+<body>
+
+    <div class="playarea">
+        <!-- css:10行目 全体枠の大きさ指定　640px 380px -->
+
+        <video id="starbg" src="images/nc44394.mp4" autoplay loop></video>
+        <!-- css:96行目 背景動画の配置と設定 自動的に動画開始・ループ　-->
+
+        <!-- -----------------  最初の画面に戻るボタン  ------------------ -->
+        <input type="button" id="backbutton" value="back" onClick="location.href='FizzBuzz.html'">
+        <!-- css:79行目 ゲームタイトル画面にジャンプ　-->
+
+
+        <!-- ランダム数値を表示する枠　-->
+        <div id="numarea"></div>
+        <!-- css:191行目 枠の位置とフォントの設定　-->
+
+        <div id="scorearea"></div>
+        <!-- css:279行目 ゲームスコアの表示枠設定　-->
+
+
+        <!-- ゲームボタンの設定　-->
+        <input type="button" id="pass" value="PASS">
+        <!-- css:207行目 -->
+        <input type="button" id="fizz" value="FIZZ">
+        <!-- css:225行目 -->
+        <input type="button" id="buzz" value="BUZZ">
+        <!-- css:243行目 -->
+        <input type="button" id="fizzbuzz" value="FIZBUZ">
+        <!-- css:261行目 -->
+
+        <!-- ゲームのプログラム -->
+        <script src="js/normal.js"></script>
+
+    </div>
+    <!-- <div class="playarea"> -->
+
+</body>
+
+</html>
