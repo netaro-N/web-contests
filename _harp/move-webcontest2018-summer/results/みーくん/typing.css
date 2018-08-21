@@ -1,0 +1,415 @@
+/* ページの中身 */
+
+body {
+  background-color: #e0ffff;
+  color: #0d1321;
+  font-family: 'Arial', 'ヒラギノ角ゴシック', 'Hiragino Sans', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  height: 640px;
+  margin: 0 auto;
+  text-align: center;
+  width: 1000px;
+}
+
+/* ボタン */
+
+button {
+  background-color: #08b2e3;
+  border: 1px solid #0e7c7b;
+  border-radius: 3px;
+  color: #fbfbff;
+  cursor: pointer;
+  padding: 10px 30px;
+}
+
+/* タイトル画面 */
+
+.title-area {
+  line-height: 3;
+}
+
+/* 文の表示エリア */
+
+.display-sentence-area {
+  border: 1px solid #0d1321;
+  border-radius: 5px;
+  height: 200px;
+  padding-top: 50px;
+}
+
+/* キーボード */
+
+.keyboard-area {
+  height: 300px;
+  position: relative;
+}
+
+.keyboard-area
+div {
+  border: 1px solid #0d1321;
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  height: 50px;
+  line-height: 50px;
+  position: absolute;
+  width: 50px;
+}
+
+.key-1 {
+  left: 150px;
+  top: 20px;
+}
+
+.key-2 {
+  left: 210px;
+  top: 20px;
+}
+
+.key-3 {
+  left: 270px;
+  top: 20px;
+}
+
+.key-4 {
+  left: 330px;
+  top: 20px;
+}
+
+.key-5 {
+  left: 390px;
+  top: 20px;
+}
+
+.key-6 {
+  left: 450px;
+  top: 20px;
+}
+
+.key-7 {
+  left: 510px;
+  top: 20px;
+}
+
+.key-8 {
+  left: 570px;
+  top: 20px;
+}
+
+.key-9 {
+  left: 630px;
+  top: 20px;
+}
+
+.key-0 {
+  left: 690px;
+  top: 20px;
+}
+
+.key-hyphen {
+  left: 750px;
+  top: 20px;
+}
+
+.key-q {
+  left: 180px;
+  top: 80px;
+}
+
+.key-w {
+  left: 240px;
+  top: 80px;
+}
+
+.key-e {
+  left: 300px;
+  top: 80px;
+}
+
+.key-r {
+  left: 360px;
+  top: 80px;
+}
+
+.key-t {
+  left: 420px;
+  top: 80px;
+}
+
+.key-y {
+  left: 480px;
+  top: 80px;
+}
+
+.key-u {
+  left: 540px;
+  top: 80px;
+}
+
+.key-i {
+  left: 600px;
+  top: 80px;
+}
+
+.key-o {
+  left: 660px;
+  top: 80px;
+}
+
+.key-p {
+  left: 720px;
+  top: 80px;
+}
+
+.key-at-sign {
+  left: 780px;
+  top: 80px;
+}
+
+.key-a {
+  left: 200px;
+  top: 140px;
+}
+
+.key-s {
+  left: 260px;
+  top: 140px;
+}
+
+.key-d {
+  left: 320px;
+  top: 140px;
+}
+
+.key-f {
+  left: 380px;
+  top: 140px;
+}
+
+.key-g {
+  left: 440px;
+  top: 140px;
+}
+
+.key-h {
+  left: 500px;
+  top: 140px;
+}
+
+.key-j {
+  left: 560px;
+  top: 140px;
+}
+
+.key-k {
+  left: 620px;
+  top: 140px;
+}
+
+.key-l {
+  left: 680px;
+  top: 140px;
+}
+
+.key-semicolon {
+  left: 740px;
+  top: 140px;
+}
+
+.key-colon {
+  left: 800px;
+  top: 140px;
+}
+
+.key-z {
+  left: 230px;
+  top: 200px;
+}
+
+.key-x {
+  left: 290px;
+  top: 200px;
+}
+
+.key-c {
+  left: 350px;
+  top: 200px;
+}
+
+.key-v {
+  left: 410px;
+  top: 200px;
+}
+
+.key-b {
+  left: 470px;
+  top: 200px;
+}
+
+.key-n {
+  left: 530px;
+  top: 200px;
+}
+
+.key-m {
+  left: 590px;
+  top: 200px;
+}
+
+.key-comma {
+  left: 650px;
+  top: 200px;
+}
+
+.key-period {
+  left: 710px;
+  top: 200px;
+}
+
+.key-slash {
+  left: 770px;
+  top: 200px;
+}
+
+/* 指 */
+
+.finger-area {
+  height: 80px;
+  position: relative;
+  width: 1000px;
+}
+
+.finger-area
+div {
+  background-color: #cbd0b9;
+  border-radius: 22px 22px 0 0;
+  bottom: 0;
+  position: absolute;
+  width: 45px;
+}
+
+.left-little-finger {
+  height: 55px;
+  left: 200px;
+}
+
+.left-ring-finger {
+  height: 75px;
+  left: 250px;
+}
+
+.left-middle-finger {
+  height: 75px;
+  left: 300px;
+}
+
+.left-index-finger {
+  height: 75px;
+  left: 350px;
+}
+
+.left-thumb {
+  height: 45px;
+  left: 400px;
+}
+
+.right-thumb {
+  height: 45px;
+  left: 550px;
+}
+
+.right-index-finger {
+  height: 75px;
+  left: 600px;
+}
+
+.right-middle-finger {
+  height: 75px;
+  left: 650px;
+}
+
+.right-ring-finger {
+  height: 75px;
+  left: 700px;
+}
+
+.right-little-finger {
+  height: 55px;
+  left: 750px;
+}
+
+/* ローマ字 */
+
+.roman {
+  font-size: 25px;
+}
+
+/* タイプしたローマ字 */
+
+.typed-roman {
+  color: #dc493a;
+  font-size: 25px;
+}
+
+/* ミスタイプ時のフラッシュ */
+
+.flash-area {
+  background-color: #dc493a;
+  height: 640px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 1000px;
+}
+
+/* 結果 */
+
+.result-area {
+  border: 1px solid #0d1321;
+  border-radius: 5px;
+  height: 400px;
+  left: 200px;
+  line-height: 2;
+  padding-left: 10px;
+  position: relative;
+  text-align: left;
+  top: 100px;
+  width: 590px;
+}
+
+.result-sentence-area {
+  border: 1px solid #0d1321;
+  border-radius: 5px;
+  height: 300px;
+  line-height: 1;
+  overflow: auto;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 400px;
+}
+
+.reload-button {
+  bottom: 20px;
+  left: 20px;
+  position: absolute;
+}
+
+.tweet-area {
+  bottom: 10px;
+  position: absolute;
+  right: 20px;
+}
+
+/* 大きい文字 */
+
+.big {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 3;
+}
+
+/* 非表示 */
+
+.hidden {
+  display: none;
+}

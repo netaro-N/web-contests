@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>miifriendsTyping</title>
+  <link rel="stylesheet" href="typing.css">
+</head>
+
+<body>
+  <!-- タイピングの練習が出来るゲームです。 -->
+  <div id="title-area" class="title-area">
+    <!-- タイトル画面 -->
+    <h1>タイピングをやってみよう！</h1>
+    <p>
+      あらかじめ半角入力にしておいてね！
+      <br> 練習するなら先にどこの段を練習するか選んでね！
+    </p>
+    <input type="radio" name="practice-option" id="practice-top">
+    <label for="practice-top">上段の練習</label>
+    <input type="radio" name="practice-option" id="practice-middle" checked>
+    <label for="practice-middle">中段の練習</label>
+    <input type="radio" name="practice-option" id="practice-bottom">
+    <label for="practice-bottom">下段の練習</label>
+    <br>
+    <button id="practice">練習</button>
+    <button id="start">本番</button>
+    <br>
+    <input type="checkbox" name="keyboard-option" id="display-keyboard" checked>
+    <label for="display-keyboard">キーボードを表示する</label>
+  </div>
+
+  <!-- 文の表示エリア -->
+  <div id="display-sentence-area" class="hidden"></div>
+  <div id="keyboard-area" class="hidden">
+    <!-- キーボード -->
+    <div id="key-1" class="key-1">1</div>
+    <div id="key-2" class="key-2">2</div>
+    <div id="key-3" class="key-3">3</div>
+    <div id="key-4" class="key-4">4</div>
+    <div id="key-5" class="key-5">5</div>
+    <div id="key-6" class="key-6">6</div>
+    <div id="key-7" class="key-7">7</div>
+    <div id="key-8" class="key-8">8</div>
+    <div id="key-9" class="key-9">9</div>
+    <div id="key-0" class="key-0">0</div>
+    <div id="key-hyphen" class="key-hyphen">-</div>
+    <div id="key-q" class="key-q">Q</div>
+    <div id="key-w" class="key-w">W</div>
+    <div id="key-e" class="key-e">E</div>
+    <div id="key-r" class="key-r">R</div>
+    <div id="key-t" class="key-t">T</div>
+    <div id="key-y" class="key-y">Y</div>
+    <div id="key-u" class="key-u">U</div>
+    <div id="key-i" class="key-i">I</div>
+    <div id="key-o" class="key-o">O</div>
+    <div id="key-p" class="key-p">P</div>
+    <div id="key-at-sign" class="key-at-sign">@</div>
+    <div id="key-a" class="key-a">A</div>
+    <div id="key-s" class="key-s">S</div>
+    <div id="key-d" class="key-d">D</div>
+    <div id="key-f" class="key-f">F</div>
+    <div id="key-g" class="key-g">G</div>
+    <div id="key-h" class="key-h">H</div>
+    <div id="key-j" class="key-j">J</div>
+    <div id="key-k" class="key-k">K</div>
+    <div id="key-l" class="key-l">L</div>
+    <div id="key-semicolon" class="key-semicolon">;</div>
+    <div id="key-colon" class="key-colon">:</div>
+    <div id="key-z" class="key-z">Z</div>
+    <div id="key-x" class="key-x">X</div>
+    <div id="key-c" class="key-c">C</div>
+    <div id="key-v" class="key-v">V</div>
+    <div id="key-b" class="key-b">B</div>
+    <div id="key-n" class="key-n">N</div>
+    <div id="key-m" class="key-m">M</div>
+    <div id="key-comma" class="key-comma">,</div>
+    <div id="key-period" class="key-period">.</div>
+    <div id="key-slash" class="key-slash">/</div>
+  </div>
+  <div id="finger-area" class="hidden">
+    <!-- 指 -->
+    <div id="left-little-finger" class="left-little-finger"></div>
+    <div id="left-ring-finger" class="left-ring-finger"></div>
+    <div id="left-middle-finger" class="left-middle-finger"></div>
+    <div id="left-index-finger" class="left-index-finger"></div>
+    <div id="left-thumb" class="left-thumb"></div>
+    <div id="right-thumb" class="right-thumb"></div>
+    <div id="right-index-finger" class="right-index-finger"></div>
+    <div id="right-middle-finger" class="right-middle-finger"></div>
+    <div id="right-ring-finger" class="right-ring-finger"></div>
+    <div id="right-little-finger" class="right-little-finger"></div>
+  </div>
+  <!-- フラッシュ -->
+  <div id="flash-area" class="hidden"></div>
+
+  <div id="result-area" class="hidden">
+    <!-- 結果 -->
+    <button id="reload" class="reload-button">もう一度</button>
+    <div id="tweet-area" class="tweet-area"></div>
+    <div id="result-sentence-area" class="result-sentence-area"></div>
+  </div>
+
+  <!-- JavaScript の読み込み -->
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script src="typing.js"></script>
+</body>
+
+</html>
