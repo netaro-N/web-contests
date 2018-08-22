@@ -1,0 +1,21 @@
+body {
+    background-color: lightgrey;
+}
+
+.face {
+    font-size: 350%;
+        color: darkblue;
+    }
+
+.back {
+    font-size: 350%;
+        color: rgb(26, 141, 194);
+    }
+
+select, input{
+        font-size:260%;
+    }     
+
+button{
+    border:solid 3px blue;  border-radius:1em;font-size:150%;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+        <meta charset="UTF-8">
+        <title>トランプゲーム「大富豪」ローカルルール早見表</title>       
+</head>
+
+<body>
+        <link rel="stylesheet" href="trump.css">
+      
+               
+　                       <!--↓↓題名と説明↓↓-->
+                        <h1 id='header'>トランプ大富豪　ルール早見表</h1>
+
+
+                        <h2>ルールを下の欄に入れよう！これを使えば早見表に早変わりだ！</h2>
+                         <!--↑↑題名と説明↑↑-->
+                      
+
+　                       <!--↓↓人数、ジョーカーの有無の確認、禁止あがり↓↓-->
+                                       
+                                        <select>
+                                                <option>3人 でプレイ</option>
+                                                <option>4人 でプレイ</option>
+                                                <option>5人 でプレイ</option>
+                                                <option>6人 でプレイ</option>
+                                        </select>
+
+                                        <select>
+                                                <option>ジョーカー あり</option>
+                                                <option>ジョーカー なし</option>
+                                        </select>
+
+                                        <select>
+                                                <option>禁止あがり あり</option>
+                                                <option>禁止あがり なし</option>
+                                        </select>
+                                        
+                         <!--↑↑人数、ジョーカーの有無の確認、禁止あがり↑↑-->
+
+
+                               <!--↓↓記入欄↓↓-->
+                               <h2>  <input type="text" placeholder="ここにルールを記入"> </h2>
+                       
+                             
+                                        <div id="pi"></div>
+                             
+
+                                <div>
+                                        <button onclick="add();">ルールを追加する</button>
+                                </div>
+                                <!--↑↑記入欄↑↑-->
+            
+     
+                <script src="trump.js"></script>
+</body>
+
+</html>
