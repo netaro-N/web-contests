@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>探しもの追跡アプリ</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+    <h2>失くしたものを探す</h2>
+    <button id="config-button" class="top-button" onclick="location.href='index.html'">トップページへ</button>
+    <button id="regist-button" class="regist-button" onclick="location.href='regist.html'">仕舞った場所の登録へ</button>
+    <button id="config-button" class="config-button" onclick="location.href='config.html'">システム設定へ</button>
+    <hr width=95%>
+    <h3>失くしたものをリストから選択して、存在する可能性のある場所を表示しよう</h3>
+    <div id="select-area2" class="select-area2"></div>
+    <div class="place-button-dummy"><button id="place-button" class="button">場所の表示</button></div>
+    <div id="result-area" class="result-area"></div>
+    <div id="place-area" class="place-area"></div>
+
+   <script src="js-search.js"></script>
+</body>
+</html>

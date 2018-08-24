@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>探しもの追跡アプリ</title>
+    <link rel="stylesheet" href="regist.css">
+</head>
+<body>
+    <h2>仕舞った場所の登録、削除</h1>
+    <button id="config-button" class="top-button" onclick="location.href='index.html'">トップページへ</button>
+    <button id="search-button" class="search-button" onclick="location.href='search.html'">失くしたものの探索へ</button>
+    <button id="config-button" class="config-button" onclick="location.href='config.html'">システム設定へ</button>
+    <hr width=95%>
+    <h3>大事なものを最後に仕舞った場所をあらかじめ登録しよう（削除もできます）</h3>
+    <div id="select-area1" class="select-area1"></div>
+    <div class="text-dummy"><input type="text" id="place-text" placeholder="仕舞った場所を入力してください" value="" style="text-align: left; " size="40" maxlength="20"></div>
+    <div class="regist-button-dummy"><button id="regist-button" class="button">場所を登録する</button></div>
+    <div class="delete-button-dummy"><button id="delete-button" class="button">場所を削除する</button></div>
+    <script src="js-regist.js"></script>
+</body>
+</html>

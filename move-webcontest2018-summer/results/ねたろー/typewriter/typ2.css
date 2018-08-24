@@ -1,0 +1,75 @@
+html{
+    background-color: #eee;  
+}
+#wrap{
+  position: relative;
+    text-align: left;
+    margin: 30px auto;
+    padding: 30px 50px;
+    width: 70%;
+    text-indent:1em;
+    background-color: #fff;
+}
+#wrap div {
+      padding: 5px 0 0;
+}
+/*インプットエリアのデザイン*/
+input[type=text]{
+  width: 100%;
+  padding: 0.375em 0.5em;
+  border: 1px solid #ccc;
+  border-top-width: 2px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 100%;
+}
+input:focus{
+  background-color: #fcdcd0;
+}
+/*表示ボタンデザイン*/
+button{
+  color: #fff;
+  padding:0.5em 1em;
+  background-color: #1e6f9a;
+  border: none;
+  border-bottom:3px solid #165373; 
+  border-radius: 5px;
+  font-size: 100%;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 1em 0;
+}
+button:hover{
+  background-color: #eba74f; 
+  text-decoration: none;
+}
+button:active {
+  border: none;
+  border-top:3px solid #165373;
+  background-color: #78c0c0;  
+  text-decoration: none;
+} 
+/*戻るボタン*/
+input[type="button"]{
+  float:right;
+  border-style: none;
+  background: url(../form-button.png) no-repeat;
+  width: 106px;
+  height: 42px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Hannari','HanziPen SC',sans-serif;
+}
+/* 表示エリア */
+#Result-box{
+  text-align: left;
+    text-indent:1em;
+    height: 200px;
+    background: rgba(167, 163, 189, 0.8);
+  display: block;
+  font-size: 19px;
+  font-family: "游明朝体" , "Yu Mincho" , "YuMincho" , "serif";
+  outline: none #2e6da4;
+  border-radius: 5%;
+}

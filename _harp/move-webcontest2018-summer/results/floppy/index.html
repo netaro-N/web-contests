@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>単語リストメーカー</title>
+	<link rel="icon" href="./favicon.png">
+	<link rel="stylesheet" type="text/css" href="./common/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./common/design.css">
+</head>
+<body id="main">
+<h1>単語リストメーカー</h1>
+	<div id="inputArea">
+		<textarea id="left-text" placeholder="左側の文字を入力"></textarea>
+		<textarea id="right-text" placeholder="右側の文字を入力"></textarea>
+	</div>
+	<div id="all_shortcut">
+		<div id="wordsGroup">
+			<button type="button" class="wordOfGroup">+S</button>
+			<button type="button" class="wordOfGroup">+V</button>
+			<button type="button" class="wordOfGroup">+V原</button>
+		</div>
+		<button type="button" id="add_shortcut"><span id="scbtn_text">ショートカットを追加</span><input type="text" id="scbtn_input" placeholder="追加したい言葉を入力"></button>
+	</div>
+	<button type="button" id="add">
+		<img src="./img/iconmonstr-plus.png" id="icon-plus">追加
+	</button>
+	<div id="allWordsArea">
+		<table id="allWordsTable"></table>
+	</div>
+	<div id="export_button">
+		<button type="button" id="csv_export">csv形式でクリップボードにコピー</button>
+		<a href="#" id="download" download="wordlist.csv">csv形式でダウンロード</a>
+	</div>
+	<a href="./howtouse.html" id="howto"><img src="./img/iconmonstr-help-3-240.png">使い方を見る</a>
+	<p class="copy">© 2018 floppy</p>
+	<script src="function.js"></script>
+</body>
+</html>

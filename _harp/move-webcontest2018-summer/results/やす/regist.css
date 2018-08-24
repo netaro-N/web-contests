@@ -1,0 +1,97 @@
+body {
+    background-color: #fff8dc;
+}
+
+h2 {
+    text-align: center;
+    color: #3300ff;
+}
+
+h3 {
+    text-align: center;
+    color: #3300ff;
+}
+
+.select-area1 {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.text-dummy {
+    text-align: center;
+}
+
+.regist-button-dummy {
+    text-align: center;
+}
+
+.delete-button-dummy {
+    text-align: center;
+}
+
+input {
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 300px;
+    height: 25px;
+}
+
+select  {
+    margin-top: 20px;
+    background-color: #66ffff;
+    width: 250px;
+    height: 30px;
+}
+
+.button {
+    margin-top: 20px;
+    margin-left: 35px;
+    text-align: center;
+    padding: 3px 3px;
+    background-color: #7fff00;
+    border-style: solid;
+    width: 120px;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+hr {
+    margin-top:85px;
+    position: absolute;
+    margin-left: 20px;
+}
+
+.top-button {
+    padding: 3px 3px;
+    background-color: #7fff00;
+    border-style: solid;
+    margin-top:50px;
+    left:60px;
+    position: absolute;
+    float: left;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-button {
+    padding: 3px 3px;
+    background-color: #7fff00;
+    border-style: solid;
+    margin-top:50px;
+    left: 300px;
+    position: absolute;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.config-button {
+    padding: 3px 3px;
+    background-color: #7fff00;
+    border-style: solid;
+    margin-top:50px;
+    left: 540px;
+    position: absolute;
+    border-radius: 5px;
+    width: 200px;
+}

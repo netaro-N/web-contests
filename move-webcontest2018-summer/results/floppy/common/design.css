@@ -1,0 +1,256 @@
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+  font-weight: 500;
+  background-color: #fff;
+}
+
+#main {
+  width: 100%;
+  text-align: center;
+}
+
+#howtopage {
+  margin-left: 15px;
+  color: #424242;
+  line-height: 1.5em;
+}
+
+h1 {
+  display: inline-block;
+}
+
+#main h1 {
+  color: #424242;
+  background: linear-gradient(transparent 60%, #c5f164 0%);
+  font-size: 25px;
+}
+
+#howtopage h1 {
+  color: #424242;
+  background: linear-gradient(transparent 60%, #ffa2e3 0%);
+  font-size: 25px;
+}
+
+h2 {
+  margin: 5px 0;
+  border-bottom: 2px dashed #204b99;
+  font-size: 22px;
+}
+
+h3 {
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.key {
+  background-color: #e9e9e9;
+  border-radius: 2px;
+  box-shadow: 0 1px #d8d6d6;
+  padding: 2px;
+  margin: 1px;
+}
+
+#back {
+  width: 100%;
+  text-align: center;
+}
+#back a {
+  position: relative;
+  display: inline-block;
+  margin: 10px auto;
+  padding: 5px 7px;
+  border-radius: 2px;
+  background-color: #ffa2e3;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 4px #d485bd;
+}
+
+#back a:hover {
+  top: 4px;
+  box-shadow: none;
+}
+
+#back a:active {
+  background-color: #d380ba;
+}
+
+#inputArea {
+  width: 100%;
+}
+
+#inputArea textarea {
+  height: 55px;
+  box-sizing: border-box;
+  background-color: #fdfdfd;
+  outline: none;
+  transition: outline-width 0.15s;
+}
+
+#inputArea textarea:focus {
+  outline: 2px solid #f57e71;
+}
+
+#wordsGroup {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.wordOfGroup {
+  box-sizing: border-box;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #eeeeee;
+  color: #79441b;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding: 0 8px;
+  margin: 0 4px;
+  transition: 0.4s ease 0s;
+  box-shadow: none;
+}
+
+.wordOfGroup:hover {
+  background-color: #d8d6d6;
+}
+
+#add_shortcut {
+  box-sizing: border-box;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #eeeeee;
+  color: #79441b;
+  padding: 0 8px;
+  margin-top: 5px;
+  transition: 0.4s ease 0s;
+}
+
+#add_shortcut:hover {
+  background-color: #d8d6d6;
+}
+
+#add_shortcut input {
+  display: none;
+}
+
+#add {
+  position: relative;
+  margin-top: 15px;
+  color: #fff;
+  border: none;
+  background-color: #91bb35;
+  border-radius: 2px;
+  height: 35px;
+  width: 150px;
+  line-height: 35px;
+  box-shadow: 0 4px #678625;
+}
+
+#add:hover {
+  box-shadow: none;
+  top: 4px;
+}
+
+#add:active {
+  background-color: #7da32c;
+}
+
+#icon-plus {
+  height: 15px;
+  padding-right: 7px;
+}
+
+#allWordsArea {
+  text-align: center;
+  height: 45vh;
+  overflow-y: scroll;
+  width: 75%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  
+}
+
+td.left, td.right {
+  font-size: 17px;
+  width: 50%;
+  border: solid #6b6b6b 1px;
+  padding: 2px;
+}
+.delete {
+  width: 30px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 1px 3px 3px 3px;
+  border: 2px dashed #f57e71;
+}
+
+.trash {
+  height: 18px;
+  padding: 0;
+}
+
+#export_button {
+  width: 100%;
+}
+
+#csv_export, #download {
+  border-top-color: rgb(216, 216, 216);
+  border-right-color: rgb(209, 209, 209);
+  border-bottom-color: rgb(186, 186, 186);
+  border-left-color: rgb(209, 209, 209);
+  border-style: solid;
+  border-width: 1px;
+  position: relative;
+  display: inline-block;
+  padding: 3px 7px;
+  margin: 5px 7px;
+  text-decoration: none;
+  color: #f57e71;
+  background: #eeeeee;
+  border-radius: 0 10px 10px 0;
+  transition: 0.4s;
+}
+
+#csv_export:hover, #download:hover {
+  background-color: #d8d6d6;
+}
+
+button:active, button:hover {
+  outline: none;
+}
+
+#howto {
+  display: inline-block;
+  text-decoration: none;
+  color: #6b6b6b;
+  margin-top: 10px;
+  font-size: 15px;
+  padding: 2px;
+}
+
+#howto img {
+  vertical-align: middle;
+  height: 15px;
+  padding: 2px;
+}
+
+.copy {
+  font-size: 12px;
+  text-align: center;
+}

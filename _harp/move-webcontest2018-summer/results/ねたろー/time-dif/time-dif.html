@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="time-dif.css">
+    <title>時差の計算</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="gradient"></div>
+        <video muted autoplay id="vid">
+            <source src="life-movie.webm" type="video/webm">
+        </video>
+    </div>
+
+    <div id="overlay">
+        <div id="contents">
+
+            <h1 id="area">サマータイムには<br>未対応です・・・</h1>
+            <form name="wrdClock">
+                <div class="select-wrap select-primary">
+                    <select id="from-city" name="from-city">
+                        <option value="135">東京</option>
+                        <option value="135">ソウル</option>
+                        <option value="150">シドニー</option>
+                        <option value="-75">ニューヨーク</option>
+                        <option value="-90">シカゴ</option>
+                        <option value="-105">アルバカーキ</option>
+                        <option value="-120">サンフランシスコ</option>
+                        <option value="-150">ハワイ</option>
+                    </select>
+                </div>
+                <label for="from-city">から見た</label>
+                <br>
+                <div class="select-wrap2 select-primary">
+                    <select id="to-city" name="to-city">
+                        <option value="135">東京</option>
+                        <option value="135">ソウル</option>
+                        <option value="150">シドニー</option>
+                        <option value="-75">ニューヨーク</option>
+                        <option value="-90">シカゴ</option>
+                        <option value="-105">アルバカーキ</option>
+                        <option value="-120">サンフランシスコ</option>
+                        <option value="-150">ハワイ</option>
+                    </select>
+                </div>
+                <label for="to-city">との時差</label>
+                <br>
+            </form>
+            <button id="calculate">計算</button>
+        </div>
+
+        <div id="Result-box">
+            <div id="result-area"></div>
+        </div>
+        <input type="button" value="アレする.comへ" onClick="location.href='../top/top.html'">
+    </div>
+    <script src="timeDifference.js"></script>
+</body>
+
+</html>

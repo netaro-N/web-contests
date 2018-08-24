@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>探しもの追跡アプリ</title>
+    <link rel="stylesheet" href="config.css">
+</head>
+<body>
+    <button id="config-button" class="top-button" onclick="location.href='index.html'">トップページへ</button>
+    <button id="search-button" class="search-button" onclick="location.href='search.html'">失くしたものの探索へ</button>
+    <button id="regist-button" class="regist-button" onclick="location.href='regist.html'">仕舞った場所の登録へ</button>
+    <hr width=95%>
+    <h2>システム設定</h2>
+    <br>
+    <h3>・アイテムの登録（最大5個まで）</h3>
+    <input type="text" id="regist-text" placeholder="アイテム名を入力してください" size="40" maxlength="20">
+    <select id="regist-number-select" name="regist-number-select">
+        <option selected>を6番目に</option>
+        <option>を7番目に</option>
+        <option>を8番目に</option>
+        <option>を9番目に</option>
+        <option>を10番目に</option>
+    </select>
+    <button id="regist-item-button" class="button">登録する</button>
+    <p>※最大５個まで登録できます。リストの1-5番目までは固定で変更できません。</p>
+    <br>
+    <h3>・アイテムの削除</h3>
+    <div class="delete-number-select-dummy">
+    <div id="select-area1" class="select-area1"></div>
+    <select id="delete-number-select" name="delete-number-select">
+        <option selected>6番目のリストを</option>
+        <option>7番目のリストを</option>
+        <option>8番目のリストを</option>
+        <option>9番目のリストを</option>
+        <option>10番目のリストを</option>
+    </select>
+    <button id="delete-button" class="delete-button">削除する</button>
+    </div>
+    <p>※リストの1-5番目までは削除できません。</p>
+    <script src="js-config.js"></script>
+</body>
+</html>

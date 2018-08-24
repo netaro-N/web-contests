@@ -1,0 +1,178 @@
+body, div, span, h1, h2, h3, p,
+a, ul, li, footer, header
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+
+a img {
+  border: none;
+}
+
+footer, header, menu {
+  display: block;
+}
+
+/*--------------------------------------------------
+ *共通設定*
+ -------------------------------------------------*/
+a {
+  text-decoration: none;
+  color: #00bfff;
+}
+a:hover {
+  color: #00d4ff;
+  text-decoration: underline;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4em;
+  color: #333;
+  font-family: 'Quattrocento Sans','Helvetica Neue', Helvetica, Arial, Verdana,"游明朝体" , "Yu Mincho" , "YuMincho" , "serif";
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+}
+
+.center {
+  text-align: center;
+}
+
+.blue, .menu a:hover {
+  color: #a0d8ef;
+}
+
+.dotted-line {
+  background: url(images/bg-dotted.png) repeat-x 0 100%;
+  padding-bottom: 5px;
+}
+
+.sofia, .page-title {
+  font-family: 'Sofia', cursive;
+}
+
+.page-title {
+  font-size: 3em;
+  text-align: center;
+}
+
+.header, .footer, .wrapper, .menu {
+  width: 100%;
+}
+
+.header {
+  padding: 5px 20px;
+  margin-bottom: 20px;
+  border-top: 6px solid #a0d8ef;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.menu {
+  margin: 0 auto 0px auto;
+  text-align: center;
+}
+.menu li {
+  display: inline;
+  margin: 0 10px 10px 0;
+  font-size: 1.3em;
+}
+.menu li a {
+  background: url(images/ico-tab-arrow.png) no-repeat 3px 50%;
+  padding: 10px 20px 10px 24px;
+  color: #333;
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  color: #FFF;
+  padding: 20px 0;
+  background: #333;
+  clear: both;
+}
+
+.wrapper {
+  padding: 20px 0;
+  background: #f8f4e6;
+  font-size: 17px;
+}
+.wrapper h3 {
+    font-size: 120%;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'ヒラギノ角ゴ Pro W6','HiraKakuPro-W6';
+}
+.wrapper p {
+  margin: 20px auto;
+}
+
+.head-title {
+  background: url(images/bg_title.png) repeat-x 0 0;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 1.6em;
+}
+
+/*--------------------------------------------------
+*リキッドレイアウト用*
+-------------------------------------------------*/
+.wrapper div {
+  box-sizing: border-box;
+  padding: 1%;
+  position: relative;
+  height: 550px;
+}
+
+.primary {
+  background: #FFF;
+}
+
+.left-box, .right-box {
+  width: 25%;
+  background: #f4b3c2;
+  text-shadow: -1px 1px rgba(255, 255, 255, 0.7);
+}
+
+.left-box {
+  float: left;
+}
+
+.primary, .right-box {
+  float: right;
+}
+
+.right-box {
+  left: 50%;
+}
+
+.float-3column .primary {
+  width: 50%;
+  left: -25%;
+}
+

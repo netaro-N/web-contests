@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>美味しいコーヒーの淹れ方</title>
+    <link rel="stylesheet" href="coffee.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="gradient"></div>
+        <video muted autoplay id="vid">
+            <source src="foods-movie.webm" type="video/webm">
+        </video>
+    </div>
+
+    <div id="overlay">
+        <div id="contents">
+            <h1>コーヒーの美味しい淹れ方</h1>
+            <table>
+                <tr>
+                    <div class="lists">
+                        <th>
+                            <label for="cup">・何杯（何人分）淹れる？</label>
+                        </th>
+                        <td>
+                            <div class="select-wrap select-primary">
+                                <select name="cup" id="cup">
+                                    <option value="1">１</option>
+                                    <option value="2">２</option>
+                                    <option value="3">３</option>
+                                </select>
+                            </div>
+                        </td>
+                    </div>
+                </tr>
+            </table>
+            <div id="Result-box">
+                <div id="result-area">
+                    <h3>ステップ１</h3>
+                    <p>1杯のコーヒーを淹れるには10gのコーヒー豆を用意してください。</p>
+                    <h3>ステップ２</h3>
+                    <p>20mlの沸騰したお湯を注いで２０秒蒸らします。</p>
+                    <h3>ステップ３</h3>
+                    <p>「80ml」→「40ml」→「20ml」の順にお湯を注いで完成です。</p>
+                </div>
+            </div>
+            <input type="button" value="アレする.comへ" onClick="location.href='../top/top.html'">
+        </div>
+    </div>
+    <script src="coffee.js"></script>
+</body>
+
+</html>

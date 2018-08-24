@@ -1,0 +1,74 @@
+body{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    background-color: white;
+}
+h1{
+    font-size: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #191817;
+}
+.button{
+    /*padding が文字をずらす要因だった*/
+    display: block;
+    transition-duration: 1s;
+    font-size: 50px;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    width: 150px;
+    height: 150px;
+    border:none;
+    background-color: #191817;
+    text-align: center;
+    line-height: 150px;
+}
+.button:hover{
+    transition-duration: 750ms;
+    color: #191817;
+    background-color: white;
+}
+.button:active{
+    transition-duration: 50ms;
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+    color: white;
+    background-color: #191817;
+}
+table{
+    
+    border:none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title{
+    margin-left: auto;
+    margin-right: auto;
+    height: 75px;
+}
+.area{
+    height: 80px;
+    padding: 10px;
+}
+.into:hover{
+    animation: Flashing;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 400ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Flashing{
+    0%{
+        color: #191817;
+    }
+    40%{
+        color: #B3B8BB;
+    }
+    80%{
+        color: #191817;
+    }
+}

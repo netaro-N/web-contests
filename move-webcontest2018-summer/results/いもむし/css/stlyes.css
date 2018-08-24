@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+  body {
+  margin: 0;
+  padding: 0;
+  font-family: "Mplus 1p";
+  background-image: url(../img/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+/* .contents-bg {
+    background-image: url(../img/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+} */
+.contents-bg {
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+
+h1 {
+  text-align: center;
+  /* margin-bottom: -10px; */
+  font-size: 70px;
+  font-family: 'Pacifico', cursive;
+}
+h1 + p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+h2 {
+  margin: -10px 0 10px 30px;
+}
+
+h2 + p {
+  margin: 10px 40px 10px 40px;
+}
+ul{
+  margin-left: 80px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+
+
+#settingArea {
+  position: relative;
+  top: 40px;
+  background-color: rgba(226, 226, 226, 0.7);
+  width: 600px;
+  margin: 20px auto;
+  padding: 40px;
+  border-radius: 3px;
+}
+.description {
+  margin: 20px 0 40px 0;
+  text-align: center;
+  font-size: 18px;
+border-bottom: dashed 2px #ff7c7c;
+}
+
+
+#displayArea {
+  position: relative;
+  top: 40px;
+  background-color: rgba(226, 226, 226, 0.7);
+  width: 600px;
+  margin: 20px auto;
+  padding: 40px;
+  border-radius: 3px;
+}
+#displayArea > p {
+  text-align: center;
+  font-size: 20px;
+  margin: 10px;
+}
+#messageArea {
+  position: relative;
+  top: 40px;
+  background-color: rgba(226, 226, 226, 0.7);
+  width: 600px;
+  margin: 20px auto;
+  padding: 40px;
+  border-radius: 3px;
+}
+.messageText {
+  margin: 40px 0;
+  text-align: center;
+  font-size: 18px;
+}
+input[type="number"] {
+  width: 150px;
+  padding: 10px;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #000;
+  box-sizing: border-box;
+  text-align: right;
+}
+input[type="number"]:not(last-child) {
+  margin-bottom: 20px;
+}
+
+.btn-area {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="button"] {
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 22px;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 250px;
+  text-transform :uppercase;
+  border: none;
+  transition:all 0.3s;
+}
+
+input[type="button"]:hover {
+  background-color: #464444;
+}
+input[type="button"]:focus {
+  outline: none;
+}
+input[type="button"]:not(first-child) {
+  margin-left: 5px;
+}
+input[type="button"]:not(last-child) {
+  margin-right: 5px;
+}
+
+#trainingRemainTimeArea, #restRemainTimeArea, #RemainSetTimesArea {
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #000;
+  font-size: 40px;
+  text-align: center;
+  margin-left: 150px;
+}
+#RemainSetTimesArea {
+  margin-bottom: 20px;
+}
+#traningRemainTimeArea > p {
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.tani {
+  margin: 20px 10px;
+  font-size: 18px;
+}
+.disabled {
+  display: none;
+}
+.addFontColor {
+  color: #fc325a;
+}
+.addFontColor2 {
+  color: #0191be;
+}
+.addBackgroundColor {
+  background-color: #fc325a !important;
+  color: #fff;
+}
+.addBackgroundColor2 {
+  background-color: #00a2d5 !important;
+  color: #fff;
+}
+.questionIcon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.icon {
+  font-size: 40px;
+  color: #222;
+  transition: 0.3s;
+}
+.icon:hover {
+  color: #464444;
+}

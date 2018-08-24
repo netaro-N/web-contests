@@ -1,0 +1,37 @@
+body {
+  background-color: #afe4ff;
+  color: #010060;
+}
+button {
+  padding: 30px 100px;
+  background-color: #edf6ff;
+}
+h1 {
+  padding: inherit;
+}
+#frame {
+  width: 500px;
+  padding: inherit;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#title {
+  text-align: center;
+}
+
+#right-frame {
+  width: auto;
+  float: right;
+}
+#left-frame {
+  width: auto;
+  float: left;
+}
+
+.my-turn {
+  background-color: #edf6ff;
+}
+.not-my-turn {
+  background-color: #09003d;
+}

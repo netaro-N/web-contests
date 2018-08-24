@@ -1,0 +1,194 @@
+ /*(@import url(http://fonts.googleapis.com/css?family=Aclonica);*/
+
+ @font-face {
+     font-family: 'Myrica';
+     src: url(font/Myrica.ttc);
+ }
+
+ html {
+     background-color: #b8dff0;
+     overflow: hidden;
+     text-align: center;
+
+ }
+
+ body {
+     color: #fff;
+     font-family: Myrica, "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+ }
+
+
+
+ span {
+     display: block;
+     float: left;
+     width: 100%;
+ }
+
+ span#clock_date {
+     font-size: 6vw;
+
+ }
+
+ span#clock_time {
+     font-size: 20vw;
+     margin-top: 5vh;
+     margin-bottom: 5vw;
+ }
+
+
+ /*table*/
+
+ table {
+     margin: 3vw auto;
+     border-radius: 2px;
+     -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+     border: 1px solid #666;
+     border-spacing: 0;
+     overflow: hidden;
+     width: 90vw;
+     height: 70vh;
+ }
+
+
+ td,
+ th {
+     border-bottom: 1px solid #666;
+     color: black;
+     font-size: 80%;
+     font-family: "游ゴシック", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+
+ }
+
+ th {
+     background: #EFEFEF;
+ }
+
+ td {
+     background: #fff;
+
+
+ }
+
+ table tbody tr:last-child th,
+ table tbody tr:last-child td {
+     border-bottom: none;
+ }
+
+ th + th,
+ td {
+     border-left: 1px solid #666;
+ }
+
+ .overlay {
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background: rgba(0, 0, 0, 0.7);
+     transition: opacity 500ms;
+     visibility: hidden;
+     opacity: 0;
+ }
+
+ .overlay:target {
+     visibility: visible;
+     opacity: 1;
+ }
+
+ .popup {
+     margin: 20px auto;
+     padding: 5vw 3vw;
+     background: #fff;
+     border-radius: 5px;
+     width: 90%;
+
+     position: relative;
+     transition: all 3s ease-in-out;
+ }
+
+
+ .popup .close {
+     position: absolute;
+     top: 20px;
+     right: 30px;
+     transition: all 200ms;
+     font-size: 3vw;
+     font-weight: bold;
+     text-decoration: none;
+     color: #333;
+ }
+
+ .popup .close:hover {
+     color: #06D85F;
+ }
+
+ .popup .content {
+     max-height: 10%;
+     overflow: auto;
+ }
+
+ @media screen and (max-width: 700px) {
+     .box {
+         width: 90%;
+     }
+     .popup {
+         width: 90%;
+     }
+ }
+
+
+ .hour {
+     width: 2%;
+ }
+
+ .week {
+     width: 10%;
+     height: 10%;
+ }
+
+ .popup h2 {
+     margin-top: 0;
+     margin-left: 5px;
+     color: #333;
+     font-size: 3vw;
+ }
+
+ .title {
+     font-size: 4vw;
+     margin: 3vw 10vw;
+ }
+
+ h1 {
+     position: relative;
+     padding: 0.35em 0.5em;
+     background: #fff;
+     color: #7971ea;
+ }
+
+ h1:before {
+
+     content: " ";
+     position: absolute;
+     top: -16px;
+     left: 0;
+     width: -webkit-calc(100% - 16px);
+     width: calc(100% - 16px);
+     height: 0;
+     border: solid 8px transparent;
+     border-bottom-color: #7971ea;
+ }
+
+
+ .button {
+
+     font-size: 2vw;
+ }
+
+ .time_title {
+
+     font-size: 2.5vw;
+     color: #7971ea;
+ }

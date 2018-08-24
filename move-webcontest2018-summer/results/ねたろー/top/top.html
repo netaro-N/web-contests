@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="top.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <title>アレする.COM（トップページ）</title>
+    <script type="text/javascript">
+        function changeFoodsImage(imgPath) {
+            document.getElementById('foods').src = imgPath;
+        }
+        function changeMapImage(imgPath) {
+            document.getElementById('map').src = imgPath;
+        }
+        function changeCulcImage(imgPath) {
+            document.getElementById('culc').src = imgPath;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="title"><a href="top.html"> アレする.com </a></h1>
+        <nav class="hamburger-nav">
+            <button type="button" id="nav-toggle" class="nav-toggle-button close">
+                <i id="icon" class="fas fa-bars"></i><span>menu</span>
+            </button>
+        </nav>
+        <ul class="nav-list close" id="nav-list">
+            <li><a href="../about/about.html">このサイトについて</a></li>
+            <li><a href="https://www.nnn.ed.nico/pages/programming/">N予備校</a></li>
+        </ul>
+    </div>
+
+
+    <div id="contents">
+
+        <!--カルーセルエリア-->
+        <div class="carousel">
+            <div class="carousel-inner">
+                <!--カルーセル１-->
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                <div class="carousel-item">
+                    <div class="c1-body">
+                        <h2>カテゴリー検索</h2>
+                        <img id="foods" src="a-icon-1.png" alt="" usemap="#foods" width="250" height="250">
+                        <map name="foods">
+                            <a href="../foods/foods.html"><div class="titles1" usemap="#foods" onmouseover="changeFoodsImage('a-icon-2.png')"
+                                    onmouseout="changeFoodsImage('a-icon-1.png')">食事</div></a>
+                            <area onmouseover="changeFoodsImage('a-icon-2.png')" onmouseout="changeFoodsImage('a-icon-1.png')" shape="circle" coords="120,150,120"
+                                href="../foods/foods.html" />
+                        </map>
+                        <img id="map" src="mo-icon-1.png" alt="" usemap="#map" width="250" height="250">
+                        <map name="map">
+                            <a href="../money/money.html"><div class="titles2" onmouseover="changeMapImage('mo-icon-2.png')"
+                                    onmouseout="changeMapImage('mo-icon-1.png')">お金</div></a>
+                            <area onmouseover="changeMapImage('mo-icon-2.png')" onmouseout="changeMapImage('mo-icon-1.png')" shape="default" href="../money/money.html"
+                            />
+                        </map>
+                        <img id="culc" src="lf-icon-1.png" alt="" usemap="#culc" width="250" height="250">
+                        <map name="culc">
+                            <a href="../life/life.html"><div class="titles3" onmouseover="changeCulcImage('lf-icon-2.png')"
+                                    onmouseout="changeCulcImage('lf-icon-1.png')">生活</div></a>
+                            <area onmouseover="changeCulcImage('lf-icon-2.png')" onmouseout="changeCulcImage('lf-icon-1.png')" shape="rect" coords="10,20,235,220"
+                                href="../life/life.html" />
+                        </map>
+                    </div>
+                </div>
+                <!--カルーセル２-->
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <div class="c2-body">
+                        <h2>五十音順リスト</h2>
+                        <table>
+                            <ul class="linked">
+                                <li><a href="../coffee/coffee.html" target="_blank"><b>コ</b>ーヒーの淹れ方</a></li>
+                                <li><a href="../time-dif/time-dif.html" target="_blank"><b>時</b>差計算</a> </li>
+                                <li><a href="../typewriter/typ2.html" target="_blank"><b>タ</b>イプライター</a></li>
+                                <li><a href="../com-int/com-int.html" target="_blank"><b>複</b>利計算</a></li>
+                                <li><a href="https://netaro-n.github.io/assessment/bungo.html" target="_blank"><b>ブ</b>ンゴウ！</a></li>
+                            </ul>
+                        </table>
+                    </div>
+                </div>
+                <!--カルーセル３-->
+                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <div class="c3-body">
+                        <div id="thanks">My Special Thanks to </div>
+                        <h2>利用させていただいたサイト</h2>
+                        <table>
+                            <ul class="sites">
+                                <li>アイコン・・・<a href="http://icooon-mono.com/" target="_blank">icooon-mono</a>さん</li>
+                                <li>色見本・・・<a href="https://www.colordic.org/w/" target="_blank">和色大辞典</a>さん</li>
+                                <li>書籍・・・<a href="https://books.mdn.co.jp/books/3213203016/" target="_blank">『CSSデザインのメソッド』</a></li>
+                            </ul>
+                        </table>
+                    </div>
+                </div>
+                <!--カルーセル内の装飾アイテム-->
+                <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+                <label for="carousel-2" class="carousel-control next control-1">›</label>
+                <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                <label for="carousel-3" class="carousel-control next control-2">›</label>
+                <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                <label for="carousel-1" class="carousel-control next control-3">›</label>
+                <ol class="carousel-indicators">
+                    <li>
+                        <label for="carousel-1" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-2" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-3" class="carousel-bullet">•</label>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <!--終）カルーセルエリア-->
+
+    </div>
+
+
+    <footer>
+        <p>&copy;Copyright ネタロー . All rights reserved.</p>
+    </footer>
+</body>
+<script src="top.js"></script>
+
+</html>

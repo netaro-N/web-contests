@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>キートレ | キープ系 トレーニングタイマー</title>
+    <link rel="stylesheet" href="css/stlyes.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="contents-bg">
+
+        <!-- 入力欄 -->
+        <div id="settingArea" class="">
+          <h1>Training!</h1>
+          <p>キートレ | キープ系 トレーニングタイマー</p>
+          <span class="questionIcon"><a href="how_to_use.html"><i class="fas fa-question-circle icon"></i></a></span>
+          <form name="setTimer">
+            <label for="">トレーニング</label>
+            <input type="number" name="trainingMin" id="id_trainingMin" value="0" min="0" max="59"><span class="tani">分</span>
+            <input type="number" name="trainingSec" id="id_trainingSec" value="0" min="0" max="59"><span class="tani">秒</span>
+            <br>
+            <label for="">インターバル</label>
+            <input type="number" name="restMin" id="id_restMin" value="0" min="0" max="59"><span class="tani">分</span>
+            <input type="number" name="restSec" id="id_restSec" value="0" min="0" max="59"><span class="tani">秒</span>
+            <br>
+            <label for="">セット数</label>
+            <input type="number" name="setTimes" id="id_setTimes" value="0" min="0" max="50"><span class="tani">回</span>
+
+            <div class="btn-area">
+              <input type="button" id="startTimer" value="start">
+              <input type="button" id="resetTimer" value="reset">
+            </div>
+          </form>
+        </div>
+
+
+        <!-- 表示欄 -->
+        <div id="displayArea" class="disabled">
+          <p id="trainingText" class="">トレーニング　残り時間</p>
+          <div id="trainingRemainTimeArea" class="">00:00</div>
+          <p id="restText" class="">インターバル　残り時間</p>
+          <div id="restRemainTimeArea" class="">00:00</div>
+          <p>残りセット数</p>
+          <div id="RemainSetTimesArea">0</div><span class="tani">回</span>
+
+            <div class="btn-area">
+            <!-- <input type="button" id="stopTimer" value="stop"> -->
+            <input type="button" id="goSettings" value="retry">
+            </div>
+
+        </div>
+
+        <!-- メッセージ欄 -->
+        <div id="messageArea" class="disabled">
+          <h1>Good job!</h1>
+          <p class="messageText">お疲れ様でした！　その調子で頑張りましょう！</p>
+          <div class="btn-area">
+          <input type="button" id="goSettings2" value="retry">
+          </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="com-int.css">
+    <title>複利の計算</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="gradient"></div>
+        <video muted autoplay id="vid">
+            <source src="money-movie.webm" type="video/webm">
+        </video>
+    </div>
+
+    <div id="overlay">
+        <div id="contents">
+            <h1>複利の計算</h1>
+            <p>全て半角入力でお願いします</p>
+            <table>
+                <tr>
+                    <th>
+                        年金利
+                    </th>
+                    <td>
+                        <input type="text" id="rate" size="5" maxlength="4" placeholder="0~10">％
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        元金
+                    </th>
+                    <td>
+                        <input type="text" id="principal" size="5" maxlength="2" placeholder="~9999">万円
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        毎月の積立金
+                    </th>
+                    <td>
+                        <input type="text" id="reserve" size="5" maxlength="2" placeholder="~9999">万円
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        年数
+                    </th>
+                    <td>
+                        <input type="text" id="years" size="5" maxlength="2" placeholder="~99">年
+                    </td>
+                </tr>
+            </table>
+
+            <button id="calculate">計算する</button>
+        </div>
+
+
+        <div id="Result-box">
+            <div id="result-area">
+            </div>
+
+        </div>
+        <input type="button" value="アレする.comへ" onClick="location.href='../top/top.html'">
+
+    </div>
+    <script src="comInt.js"></script>
+</body>
+
+</html>

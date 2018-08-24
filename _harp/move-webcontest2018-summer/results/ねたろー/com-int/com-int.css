@@ -1,0 +1,133 @@
+.wrapper {
+    position: absolute;
+    width: 100%;
+}
+.gradient {
+    background-image:
+     linear-gradient(225deg,rgba(234, 244, 252, 0.6) , rgba(214, 152, 172, 0.8));
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: fixed;
+    background-size: cover;
+    z-index: 0;
+}
+video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    background-size: cover;
+}
+#overlay{
+  width: 800px;
+  height: 400px;
+  border-radius: 5%;
+  display: block;
+  position: relative;
+  top: 150px;
+  right: 0%;
+  background: rgba(124, 99, 124, 0.8);
+  outline: none #ffffff;
+  color: #f9efdb;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Hannari','HanziPen SC',sans-serif;
+    text-align: center;
+}
+#contents{
+    position: absolute;
+    outline: none #78c0c0;
+    top: 0%;
+    bottom: 0%;
+    left: 5%;
+}
+table{
+   height: auto;
+   margin: auto 5em 15px auto; 
+    width: 220px;
+    border-style: none;
+    outline: none;
+}
+th,td{
+    font-size: 20px;
+    outline: #78c0c0 none;
+}
+th{
+    text-align: right;
+}
+td{
+    text-align: left;
+}
+
+/* 診断結果エリア */
+#Result-box{
+    position: absolute;
+    display: block;
+    top: 20%;
+    right: 20%;
+    font-family: "游明朝体" , "Yu Mincho" , "YuMincho" , "serif";
+    color: #e09f4b;
+    outline: none #2e6da4;
+    border-radius: 5%;
+    background: rgba(93, 84, 146, 0.8);
+}
+h3{
+    color: #ebe14f;
+    font-family: sans-serif;
+    margin:0;
+}
+p{
+    margin:0;
+    font-size: 20px;
+}
+#number{
+    color: #ebe14f;
+    font-size: xx-large;
+    font-weight: bold;
+}
+/*計算するボタンデザイン*/
+button{
+    color: #fff;
+    padding:1em 1.5em;
+    background-color: #1e6f9a;
+    border: none;
+    border-bottom:3px solid #165373; 
+    border-radius: 5px;
+    font-size: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+button:hover{
+    background-color: #eba74f; 
+    text-decoration: none;
+}
+button:active {
+    border: none;
+    border-top:3px solid #165373;
+    background-color: #78c0c0;  
+    text-decoration: none;
+} 
+/*戻るボタン*/
+input[type="button"]{
+    position: absolute;
+    top: 25em;
+    right: 2em;
+    border-style: none;
+    background: url(../form-button.png) no-repeat;
+    width: 106px;
+    height: 42px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Hannari','HanziPen SC',sans-serif;
+}
