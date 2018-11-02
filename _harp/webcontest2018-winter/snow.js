@@ -1,11 +1,13 @@
 const snowMany = 300;
 const snows = [];
+let imageDivHeight = 300;
 
 window.onload = function() {
+    imageDivHeight = document.getElementById('imageDiv').clientHeight;
     for (let id = 1; id <= snowMany; id++) {
         const snowObj = {
-            x: Math.floor(Math.random() * window.innerWidth),
-            y: Math.floor(Math.random() * window.innerHeight),
+            x: Math.floor(Math.random() * 3000),
+            y: Math.floor(Math.random() * imageDivHeight),
             element: null
         }
         const snow = document.createElement("span");
@@ -26,7 +28,7 @@ window.onload = function() {
 
 function moveSnows() {
     for (let snowObj of snows) {
-        snowObj.y = snowObj.y > window.innerHeight ? 0 : snowObj.y + 1;
+        snowObj.y = snowObj.y > imageDivHeight ? 0 : snowObj.y + 1;
         snowObj.element.style.top = snowObj.y + 'px';
     }
 }
